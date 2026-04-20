@@ -1,863 +1,1343 @@
 <!doctype html>
 
 <html class="dark" lang="en">
-
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>
-        Pooja Mane | Custom Software Builder | Senior Full Stack Developer
+      Pooja Mane | Custom Software Builder | Senior Full Stack Developer
     </title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link
-        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap"
-        rel="stylesheet" />
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
     <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-        rel="stylesheet" />
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
     <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        "on-error": "#490013",
-                        "on-tertiary-container": "#004b58",
-                        "tertiary-fixed": "#53ddfc",
-                        "tertiary-dim": "#40ceed",
-                        "on-secondary": "#33005b",
-                        "secondary-fixed": "#e5c6ff",
-                        "primary-container": "#9396ff",
-                        "on-secondary-fixed-variant": "#7511c3",
-                        "on-primary-fixed-variant": "#0e009d",
-                        "on-primary-container": "#0a0081",
-                        "error-container": "#a70138",
-                        "tertiary-fixed-dim": "#40ceed",
-                        error: "#ff6e84",
-                        "on-primary": "#0f00a4",
-                        outline: "#6d758c",
-                        "outline-variant": "#40485d",
-                        "tertiary-container": "#53ddfc",
-                        "primary-dim": "#6063ee",
-                        "on-primary-fixed": "#000000",
-                        "error-dim": "#d73357",
-                        surface: "#060e20",
-                        "surface-bright": "#1f2b49",
-                        "secondary-fixed-dim": "#dbb4ff",
-                        "surface-container-highest": "#192540",
-                        "on-error-container": "#ffb2b9",
-                        "surface-tint": "#c180ff",
-                        "on-background": "#dee5ff",
-                        "on-secondary-container": "#e9cdff",
-                        "primary-fixed": "#9396ff",
-                        secondary: "#c180ff",
-                        "surface-container": "#0f1930",
-                        "surface-dim": "#060e20",
-                        "surface-container-high": "#141f38",
-                        "on-tertiary": "#005464",
-                        "surface-variant": "#192540",
-                        "primary-fixed-dim": "#8387ff",
-                        tertiary: "#8ce7ff",
-                        "inverse-primary": "#494bd7",
-                        "secondary-dim": "#9c48ea",
-                        "on-secondary-fixed": "#4f0089",
-                        "inverse-surface": "#faf8ff",
-                        "surface-container-low": "#091328",
-                        background: "#060e20",
-                        "secondary-container": "#6f00be",
-                        "inverse-on-surface": "#4d556b",
-                        "surface-container-lowest": "#000000",
-                        "on-surface-variant": "#a3aac4",
-                        "on-tertiary-fixed": "#003640",
-                        primary: "#c180ff",
-                        "on-surface": "#dee5ff",
-                        "on-tertiary-fixed-variant": "#005564",
-                    },
-                    fontFamily: {
-                        headline: ["Space Grotesk"],
-                        body: ["Manrope"],
-                        label: ["Manrope"],
-                    },
-                    borderRadius: {
-                        DEFAULT: "0.125rem",
-                        lg: "0.25rem",
-                        xl: "0.5rem",
-                        full: "0.75rem",
-                    },
-                },
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-error": "#490013",
+              "on-tertiary-container": "#004b58",
+              "tertiary-fixed": "#53ddfc",
+              "tertiary-dim": "#40ceed",
+              "on-secondary": "#33005b",
+              "secondary-fixed": "#e5c6ff",
+              "primary-container": "#9396ff",
+              "on-secondary-fixed-variant": "#7511c3",
+              "on-primary-fixed-variant": "#0e009d",
+              "on-primary-container": "#0a0081",
+              "error-container": "#a70138",
+              "tertiary-fixed-dim": "#40ceed",
+              error: "#ff6e84",
+              "on-primary": "#0f00a4",
+              outline: "#6d758c",
+              "outline-variant": "#40485d",
+              "tertiary-container": "#53ddfc",
+              "primary-dim": "#6063ee",
+              "on-primary-fixed": "#000000",
+              "error-dim": "#d73357",
+              surface: "#060e20",
+              "surface-bright": "#1f2b49",
+              "secondary-fixed-dim": "#dbb4ff",
+              "surface-container-highest": "#192540",
+              "on-error-container": "#ffb2b9",
+              "surface-tint": "#c180ff",
+              "on-background": "#dee5ff",
+              "on-secondary-container": "#e9cdff",
+              "primary-fixed": "#9396ff",
+              secondary: "#c180ff",
+              "surface-container": "#0f1930",
+              "surface-dim": "#060e20",
+              "surface-container-high": "#141f38",
+              "on-tertiary": "#005464",
+              "surface-variant": "#192540",
+              "primary-fixed-dim": "#8387ff",
+              tertiary: "#8ce7ff",
+              "inverse-primary": "#494bd7",
+              "secondary-dim": "#9c48ea",
+              "on-secondary-fixed": "#4f0089",
+              "inverse-surface": "#faf8ff",
+              "surface-container-low": "#091328",
+              background: "#060e20",
+              "secondary-container": "#6f00be",
+              "inverse-on-surface": "#4d556b",
+              "surface-container-lowest": "#000000",
+              "on-surface-variant": "#a3aac4",
+              "on-tertiary-fixed": "#003640",
+              primary: "#c180ff",
+              "on-surface": "#dee5ff",
+              "on-tertiary-fixed-variant": "#005564",
             },
-        };
+            fontFamily: {
+              headline: ["Space Grotesk"],
+              body: ["Manrope"],
+              label: ["Manrope"],
+            },
+            borderRadius: {
+              DEFAULT: "0.125rem",
+              lg: "0.25rem",
+              xl: "0.5rem",
+              full: "0.75rem",
+            },
+          },
+        },
+      };
     </script>
     <style>
-        .material-symbols-outlined {
-            font-variation-settings:
-                "FILL" 0,
-                "wght" 400,
-                "GRAD" 0,
-                "opsz" 24;
+      .material-symbols-outlined {
+        font-variation-settings:
+          "FILL" 0,
+          "wght" 400,
+          "GRAD" 0,
+          "opsz" 24;
+      }
+
+      .glass-panel {
+        background: rgba(25, 37, 64, 0.4);
+        backdrop-filter: blur(24px);
+        -webkit-backdrop-filter: blur(24px);
+      }
+
+      .text-gradient-primary {
+        background: linear-gradient(to right, #c180ff, #c180ff);
+        /* -webkit-background-clip: text; */
+        -webkit-text-fill-color: transparent;
+      }
+
+      .glow-hover:hover {
+        box-shadow: 0 0 30px rgba(163, 166, 255, 0.15);
+      }
+
+      .cursor::after {
+        content: "";
+        display: inline-block;
+        width: 2px;
+        height: 1em;
+        background: currentColor;
+        animation: blink 1s infinite;
+      }
+
+      @keyframes blink {
+        0%,
+        50% {
+          opacity: 1;
         }
 
-        .glass-panel {
-            background: rgba(25, 37, 64, 0.4);
-            backdrop-filter: blur(24px);
-            -webkit-backdrop-filter: blur(24px);
+        51%,
+        100% {
+          opacity: 0;
+        }
+      }
+
+      @keyframes fadeLoop {
+        0%,
+        100% {
+          opacity: 0.3;
         }
 
-        .text-gradient-primary {
-            background: linear-gradient(to right, #c180ff, #c180ff);
-            /* -webkit-background-clip: text; */
-            -webkit-text-fill-color: transparent;
+        50% {
+          opacity: 1;
         }
+      }
 
-        .glow-hover:hover {
-            box-shadow: 0 0 30px rgba(163, 166, 255, 0.15);
+      .animate-shine {
+        background: linear-gradient(90deg, #c180ff, #ffffff, #c180ff);
+        background-size: 200% auto;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: shine 3s linear infinite;
+      }
+
+      @keyframes shine {
+        to {
+          background-position: 200% center;
         }
-
-        .cursor::after {
-            content: "";
-            display: inline-block;
-            width: 2px;
-            height: 1em;
-            background: currentColor;
-            animation: blink 1s infinite;
-        }
-
-        @keyframes blink {
-
-            0%,
-            50% {
-                opacity: 1;
-            }
-
-            51%,
-            100% {
-                opacity: 0;
-            }
-        }
-
-        @keyframes fadeLoop {
-
-            0%,
-            100% {
-                opacity: 0.3;
-            }
-
-            50% {
-                opacity: 1;
-            }
-        }
-
-        .animate-shine {
-            background: linear-gradient(90deg, #c180ff, #ffffff, #c180ff);
-            background-size: 200% auto;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            animation: shine 3s linear infinite;
-        }
-
-        @keyframes shine {
-            to {
-                background-position: 200% center;
-            }
-        }
+      }
     </style>
-</head>
+  </head>
 
-<body
-    class="bg-background text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container overflow-x-hidden">
+  <body
+    class="bg-background text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container overflow-x-hidden"
+  >
     <!-- TopNavBar -->
     <nav
-        class="fixed top-0 w-full z-50 bg-[#060e20]/60 backdrop-blur-xl dark:bg-[#060e20]/60 border-b border-[#ffffff]/10 shadow-2xl shadow-indigo-500/10">
-        <div class="flex justify-between items-center px-8 py-4 max-w-[1440px] mx-auto">
-            <a class="text-2xl font-bold tracking-tighter text-[#c180ff] font-headline" href="#">POOJA MANE</a>
-            <div class="flex items-center gap-3 md:gap-4">
-                <!-- Resume Download -->
-                <a href="/assets/images/Pooja-Sr-PHP-4.pdf" download
-                    class="md:hidden text-[#c180ff] p-2 rounded-xl hover:bg-white/10 transition flex items-center gap-2"
-                    title="Download Resume">
-                    <span class="material-symbols-outlined">download</span>
-                    <span class="hidden sm:inline text-sm font-semibold">Resume</span>
-                </a>
+      class="fixed top-0 w-full z-50 bg-[#060e20]/60 backdrop-blur-xl dark:bg-[#060e20]/60 border-b border-[#ffffff]/10 shadow-2xl shadow-indigo-500/10"
+    >
+      <div
+        class="flex justify-between items-center px-8 py-4 max-w-[1440px] mx-auto"
+      >
+        <a
+          class="text-2xl font-bold tracking-tighter text-[#c180ff] font-headline"
+          href="#"
+          >POOJA MANE</a
+        >
+        <div class="flex items-center gap-3 md:gap-4">
+          <!-- Resume Download -->
+          <a
+            href="/assets/images/Pooja-Sr-PHP-4.pdf"
+            download
+            class="md:hidden text-[#c180ff] p-2 rounded-xl hover:bg-white/10 transition flex items-center gap-2"
+            title="Download Resume"
+          >
+            <span class="material-symbols-outlined">download</span>
+            <span class="hidden sm:inline text-sm font-semibold">Resume</span>
+          </a>
 
-                <!-- Menu Toggle -->
-                <button class="md:hidden text-[#c180ff] p-2 rounded-xl hover:bg-white/10 transition" id="menu-toggle">
-                    <span class="material-symbols-outlined">menu</span>
-                </button>
-            </div>
-            <div class="hidden md:flex flex-wrap gap-4 lg:gap-8 items-center">
-                <a class="uppercase tracking-widest text-[0.75rem] font-bold text-[#c180ff] hover:text-[#ffffff] hover:drop-shadow-[0_0_8px_#c180ff] transition"
-                    href="#about">About</a>
-                <a class="uppercase tracking-widest text-[0.75rem] font-bold text-[#c180ff] hover:text-[#ffffff] hover:drop-shadow-[0_0_8px_#c180ff] transition"
-                    href="#skills">Skills</a>
-                <a class="uppercase tracking-widest text-[0.75rem] font-bold text-[#c180ff] hover:text-[#ffffff] hover:drop-shadow-[0_0_8px_#c180ff] transition"
-                    href="#experience">Experience</a>
-                <a class="uppercase tracking-widest text-[0.75rem] font-bold text-[#c180ff] hover:text-[#ffffff] hover:drop-shadow-[0_0_8px_#c180ff] transition"
-                    href="#certifications">Certifications</a>
-                <a class="uppercase tracking-widest text-[0.75rem] font-bold text-[#c180ff] hover:text-[#ffffff] hover:drop-shadow-[0_0_8px_#c180ff] transition"
-                    href="#contact">Contact</a>
-            </div>
-            <div id="nav-menu"
-                class="fixed left-0 top-0 w-64 h-screen bg-[#060e20]/95 backdrop-blur-xl transform -translate-x-full transition-transform duration-300 md:hidden z-40 p-8">
-                <div class="flex justify-between items-center mb-8">
-                    <span class="text-xl font-bold text-[#c180ff] font-headline">POOJA MANE</span>
-                    <button id="menu-close" class="text-[#c180ff] hover:text-white transition">
-                        <span class="material-symbols-outlined">close</span>
-                    </button>
-                </div>
-                <div class="flex flex-col gap-4">
-                    <a class="uppercase tracking-widest text-[0.75rem] font-bold text-[#c180ff] hover:text-[#ffffff] hover:drop-shadow-[0_0_8px_#c180ff] transition"
-                        href="#about">About</a>
-                    <a class="uppercase tracking-widest text-[0.75rem] font-bold text-[#c180ff] hover:text-[#ffffff] hover:drop-shadow-[0_0_8px_#c180ff] transition"
-                        href="#skills">Skills</a>
-                    <a class="uppercase tracking-widest text-[0.75rem] font-bold text-[#c180ff] hover:text-[#ffffff] hover:drop-shadow-[0_0_8px_#c180ff] transition"
-                        href="#experience">Experience</a>
-                    <a class="uppercase tracking-widest text-[0.75rem] font-bold text-[#c180ff] hover:text-[#ffffff] hover:drop-shadow-[0_0_8px_#c180ff] transition"
-                        href="#certifications">Certifications</a>
-                    <a class="uppercase tracking-widest text-[0.75rem] font-bold text-[#c180ff] hover:text-[#ffffff] hover:drop-shadow-[0_0_8px_#c180ff] transition"
-                        href="#contact">Contact</a>
-                </div>
-            </div>
-            <a href="/assets/images/Pooja-Sr-PHP-4.pdf" download
-           class="hidden md:block bg-primary hover:bg-primary-fixed-dim text-on-primary-fixed px-6 py-2 rounded-xl font-headline font-bold uppercase tracking-wider text-sm transition-all active:scale-95 duration-200">
-            Resume
-            </a>
+          <!-- Menu Toggle -->
+          <button
+            class="md:hidden text-[#c180ff] p-2 rounded-xl hover:bg-white/10 transition"
+            id="menu-toggle"
+          >
+            <span class="material-symbols-outlined">menu</span>
+          </button>
         </div>
+        <div class="hidden md:flex flex-wrap gap-4 lg:gap-8 items-center">
+          <a
+            class="uppercase tracking-widest text-[0.75rem] font-bold text-[#c180ff] hover:text-[#ffffff] hover:drop-shadow-[0_0_8px_#c180ff] transition"
+            href="#skills"
+            >Skills</a
+          >
+          <a
+            class="uppercase tracking-widest text-[0.75rem] font-bold text-[#c180ff] hover:text-[#ffffff] hover:drop-shadow-[0_0_8px_#c180ff] transition"
+            href="#experience"
+            >Experience</a
+          >
+          <a
+            class="uppercase tracking-widest text-[0.75rem] font-bold text-[#c180ff] hover:text-[#ffffff] hover:drop-shadow-[0_0_8px_#c180ff] transition"
+            href="#projects"
+            >Projects</a
+          >
+          <a
+            class="uppercase tracking-widest text-[0.75rem] font-bold text-[#c180ff] hover:text-[#ffffff] hover:drop-shadow-[0_0_8px_#c180ff] transition"
+            href="#certifications"
+            >Certifications</a
+          >
+          <a
+            class="uppercase tracking-widest text-[0.75rem] font-bold text-[#c180ff] hover:text-[#ffffff] hover:drop-shadow-[0_0_8px_#c180ff] transition"
+            href="#about"
+            >About</a
+          >
+          <a
+            class="uppercase tracking-widest text-[0.75rem] font-bold text-[#c180ff] hover:text-[#ffffff] hover:drop-shadow-[0_0_8px_#c180ff] transition"
+            href="#contact"
+            >Contact</a
+          >
+        </div>
+        <div
+          id="nav-menu"
+          class="fixed left-0 top-0 w-64 h-screen bg-[#060e20]/95 backdrop-blur-xl transform -translate-x-full transition-transform duration-300 md:hidden z-40 p-8"
+        >
+          <div class="flex justify-between items-center mb-8">
+            <span class="text-xl font-bold text-[#c180ff] font-headline"
+              >POOJA MANE</span
+            >
+            <button
+              id="menu-close"
+              class="text-[#c180ff] hover:text-white transition"
+            >
+              <span class="material-symbols-outlined">close</span>
+            </button>
+          </div>
+          <div class="flex flex-col gap-4">
+            <a
+              class="uppercase tracking-widest text-[0.75rem] font-bold text-[#c180ff] hover:text-[#ffffff] hover:drop-shadow-[0_0_8px_#c180ff] transition"
+              href="#skills"
+              >Skills</a
+            >
+            <a
+              class="uppercase tracking-widest text-[0.75rem] font-bold text-[#c180ff] hover:text-[#ffffff] hover:drop-shadow-[0_0_8px_#c180ff] transition"
+              href="#experience"
+              >Experience</a
+            >
+            <a
+              class="uppercase tracking-widest text-[0.75rem] font-bold text-[#c180ff] hover:text-[#ffffff] hover:drop-shadow-[0_0_8px_#c180ff] transition"
+              href="#projects"
+              >Projects</a
+            >
+            <a
+              class="uppercase tracking-widest text-[0.75rem] font-bold text-[#c180ff] hover:text-[#ffffff] hover:drop-shadow-[0_0_8px_#c180ff] transition"
+              href="#certifications"
+              >Certifications</a
+            >
+            <a
+              class="uppercase tracking-widest text-[0.75rem] font-bold text-[#c180ff] hover:text-[#ffffff] hover:drop-shadow-[0_0_8px_#c180ff] transition"
+              href="#about"
+              >About</a
+            >
+            <a
+              class="uppercase tracking-widest text-[0.75rem] font-bold text-[#c180ff] hover:text-[#ffffff] hover:drop-shadow-[0_0_8px_#c180ff] transition"
+              href="#contact"
+              >Contact</a
+            >
+          </div>
+        </div>
+        <a
+          href="/assets/images/Pooja-Sr-PHP-4.pdf"
+          download
+          class="hidden md:block bg-primary hover:bg-primary-fixed-dim text-on-primary-fixed px-6 py-2 rounded-xl font-headline font-bold uppercase tracking-wider text-sm transition-all active:scale-95 duration-200"
+        >
+          Resume
+        </a>
+      </div>
     </nav>
     <main>
-        <!-- Hero Section -->
-        <section class="relative min-h-screen flex items-center pt-20 overflow-hidden">
-            <div class="absolute inset-0 z-0">
-                <div class="absolute top-[-10%] left-[-5%] w-[50%] h-[50%] bg-primary/10 blur-[120px] rounded-full">
-                </div>
-                <div
-                    class="absolute bottom-[-10%] right-[-5%] w-[40%] h-[40%] bg-secondary/10 blur-[120px] rounded-full">
-                </div>
-            </div>
-            <div class="relative z-10 max-w-[1440px] mx-auto px-8 md:px-24 grid md:grid-cols-12 gap-12 items-center">
-                <div class="md:col-span-8">
-                    <div
-                        class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-outline-variant bg-surface-container-low mb-6">
-                        <span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
-                        <span
-                            class="animate-shine text-[0.65rem] font-label uppercase tracking-widest font-bold text-on-surface-variant">Available
-                            for new opportunities</span>
-                    </div>
-                    <h1
-                        class="font-headline text-4xl sm:text-5xl md:text-6xl lg:text-[5.5rem] leading-[1] font-bold tracking-tight mb-8">
-                        <span class="block">Pooja Mane</span>
-                        <span class="block text-3xl sm:text-4xl md:text-5xl lg:text-6xl mt-4">
-                            <span id="typing-text" class="text-on-surface" style="color: #c180ff"></span><span
-                                class="cursor"></span>
-                        </span>
-                        <span class="block text-3xl sm:text-4xl md:text-5xl lg:text-6xl mt-4 text-on-surface">
-                            Senior Full Stack Developer & Team Leader
-                        </span>
-                    </h1>
-                    <p class="text-lg md:text-xl text-on-surface-variant max-w-2xl leading-relaxed mb-10">
-                        Delivering tailored ERP, CRM, and E‑commerce solutions with
-                        expertise in RESTful APIs, responsive UI, and secure payment
-                        integrations. Focused on building scalable applications that
-                        streamline operations, reduce manual effort, and drive business
-                        growth.
-                        <br /><i>Turning complex workflows into simple digital solutions.</i>
-                    </p>
-                    <div class="flex flex-wrap gap-6">
-                        <a class="bg-gradient-to-r from-primary to-primary-container text-on-primary-fixed px-8 py-4 rounded-xl font-headline font-bold uppercase tracking-wider transition-all hover:shadow-[0_0_20px_rgba(163,166,255,0.4)]"
-                            href="#contact">
-                            Let's Connect
-                        </a>
-                        <a class="inline-flex items-center gap-2 border border-outline-variant px-8 py-4 rounded-xl font-headline font-bold uppercase tracking-wider hover:bg-surface-bright transition-all"
-                            href="#experience">
-                            View Work
-                            <span class="material-symbols-outlined text-sm">arrow_forward</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="md:col-span-4 hidden md:block">
-                    <div
-                        class="relative aspect-square rounded-2xl overflow-hidden border border-outline-variant p-2 bg-surface-container">
-                        <img alt="Pooja Mane" class="w-full h-full object-cover rounded-xl transition-all duration-700"
-                            data-alt="Professional portrait of Pooja Mane, Senior Full Stack Developer"
-                            src="assets/images/photo.jpg" />
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- About Section -->
-        <section class="py-32 bg-surface-container-low" id="about">
-            <div class="max-w-[1440px] mx-auto px-8 md:px-24">
-                <div class="grid md:grid-cols-2 gap-20 items-center">
-                    <div>
-                        <h2 class="font-headline text-headline-lg font-bold mb-8 flex items-center gap-4">
-                            <span class="w-12 h-[2px] bg-secondary"></span>
-                            Professional Summary
-                        </h2>
-                        <div class="space-y-6 text-on-surface-variant text-lg leading-relaxed">
-                            <p>
-                                Senior Full Stack Developer & Team Leader with 4+ years of
-                                experience delivering custom ERP, CRM, BFSI and E‑commerce
-                                solutions. Skilled in PHP (Laravel, CodeIgniter), Node.js and
-                                Python with hands‑on AWS deployments and secure payment
-                                integrations.
-                            </p>
-                            <p>
-                                Experienced in Agile leadership and performance optimization,
-                                leveraging generative AI tools (ChatGPT, Copilot, Gemini) to
-                                accelerate development and improve productivity.
-                            </p>
-                        </div>
-                        <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-8">
-                            <div>
-                                <span class="block text-4xl font-headline font-bold text-tertiary">4+</span>
-                                <span class="font-label text-xs uppercase tracking-widest text-on-surface-variant">Years
-                                    Experience</span>
-                            </div>
-                            <div>
-                                <span class="block text-4xl font-headline font-bold text-primary">Multiple</span>
-                                <span
-                                    class="font-label text-xs uppercase tracking-widest text-on-surface-variant">Scalable
-                                    Domains</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <div class="glass-panel p-6 rounded-xl border border-white/5 glow-hover transition-all">
-                            <span class="material-symbols-outlined text-primary text-3xl mb-4"
-                                data-icon="leaderboard">leaderboard</span>
-                            <h3 class="font-headline font-bold mb-2">Team Leadership</h3>
-                            <p class="text-sm text-on-surface-variant">
-                                Guiding cross-functional teams through Agile planning.
-                            </p>
-                        </div>
-                        <div
-                            class="glass-panel p-6 rounded-xl border border-white/5 sm:translate-y-8 glow-hover transition-all">
-                            <span class="material-symbols-outlined text-primary text-3xl mb-4"
-                                data-icon="api">api</span>
-                            <h3 class="font-headline font-bold mb-2">RESTful APIs</h3>
-                            <p class="text-sm text-on-surface-variant">
-                                Designing secure &amp; efficient API integrations.
-                            </p>
-                        </div>
-                        <div class="glass-panel p-6 rounded-xl border border-white/5 glow-hover transition-all">
-                            <span class="material-symbols-outlined text-tertiary text-3xl mb-4"
-                                data-icon="monitoring">monitoring</span>
-                            <h3 class="font-headline font-bold mb-2">System Monitoring</h3>
-                            <p class="text-sm text-on-surface-variant">
-                                Real-time visibility and system audit tools.
-                            </p>
-                        </div>
-                        <div
-                            class="glass-panel p-6 rounded-xl border border-white/5 sm:translate-y-8 glow-hover transition-all">
-                            <span class="material-symbols-outlined text-primary-container text-3xl mb-4"
-                                data-icon="psychology">psychology</span>
-                            <h3 class="font-headline font-bold mb-2">Gen AI Tools</h3>
-                            <p class="text-sm text-on-surface-variant">
-                                Leveraging AI for accelerated development.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="py-24 md:py-32" id="skills">
-            <div class="max-w-[1440px] mx-auto px-8 md:px-24">
-                <div class="mb-16 md:mb-20 text-center">
-                    <h2
-                        class="font-headline text-headline-lg font-bold mb-4 text-white drop-shadow-[0_0_10px_rgba(163,166,255,0.7)]">
-                        Technical Proficiency
-                    </h2>
-                    <p class="text-on-surface-variant max-w-xl mx-auto">
-                        Comprehensive stack covering frontend, backend, databases, and
-                        modern development tools.
-                    </p>
-                </div>
-                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
-                    <!-- Backend -->
-                    <div
-                        class="p-6 sm:p-10 rounded-xl shadow-lg bg-gradient-to-br from-secondary/10 to-secondary/20 hover:scale-105 transition-transform">
-                        <div class="flex items-center gap-4 mb-6">
-                            <div class="w-12 h-12 rounded-full bg-secondary/20 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-primary">terminal</span>
-                            </div>
-                            <h3 class="font-headline font-bold text-xl m-0">Backend</h3>
-                        </div>
-                        <div class="flex flex-wrap gap-3">
-                            <span class="badge">PHP</span>
-                            <span class="badge">Laravel</span>
-                            <span class="badge">CodeIgniter 3/4</span>
-                            <span class="badge">Node.js (Express)</span>
-                            <span class="badge">Python</span>
-                        </div>
-                    </div>
-                    <!-- Frontend -->
-                    <div
-                        class="p-6 sm:p-10 rounded-xl shadow-lg bg-gradient-to-br from-primary/10 to-primary/20 hover:scale-105 transition-transform">
-                        <div class="flex items-center gap-4 mb-6">
-                            <div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-primary">developer_board</span>
-                            </div>
-                            <h3 class="font-headline font-bold text-xl m-0">Frontend</h3>
-                        </div>
-                        <div class="flex flex-wrap gap-3">
-                            <span class="badge">HTML5/CSS3</span>
-                            <span class="badge">JavaScript</span>
-                            <span class="badge">Bootstrap</span>
-                            <span class="badge">Tailwind CSS</span>
-                            <span class="badge">AJAX/jQuery</span>
-                        </div>
-                    </div>
-                    <!-- Databases -->
-                    <div
-                        class="p-6 sm:p-10 rounded-xl shadow-lg bg-gradient-to-br from-tertiary/10 to-tertiary/20 hover:scale-105 transition-transform">
-                        <div class="flex items-center gap-4 mb-6">
-                            <div class="w-12 h-12 rounded-full bg-tertiary/20 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-tertiary">storage</span>
-                            </div>
-                            <h3 class="font-headline font-bold text-xl m-0">Databases</h3>
-                        </div>
-                        <div class="flex flex-wrap gap-3">
-                            <span class="badge">MySQL</span>
-                            <span class="badge">PostgreSQL</span>
-                            <span class="badge">MongoDB</span>
-                            <span class="badge">SQL Optimization</span>
-                        </div>
-                    </div>
-                    <!-- Tools & AI -->
-                    <div
-                        class="p-6 sm:p-10 rounded-xl shadow-lg bg-gradient-to-br from-on-surface-variant/10 to-on-surface-variant/20 hover:scale-105 transition-transform">
-                        <div class="flex items-center gap-4 mb-6">
-                            <div
-                                class="w-12 h-12 rounded-full bg-on-surface-variant/20 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-on-surface-variant">settings_suggest</span>
-                            </div>
-                            <h3 class="font-headline font-bold text-xl m-0">Tools & AI</h3>
-                        </div>
-                        <div class="flex flex-wrap gap-3">
-                            <span class="badge">Git/GitHub</span>
-                            <span class="badge">Postman</span>
-                            <span class="badge">AWS/GoDaddy</span>
-                            <span class="badge">GitHub Copilot</span>
-                            <span class="badge">ChatGPT</span>
-                            <span class="badge">Gemini</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Experience Section -->
-        <section class="py-32 bg-surface-container-low" id="experience">
-            <div class="max-w-[1440px] mx-auto px-8 md:px-24">
-                <div class="mb-20 text-center">
-                    <h2
-                        class="font-headline text-headline-lg font-bold mb-4 text-white drop-shadow-[0_0_10px_rgba(163,166,255,0.7)]">
-                        Work Experience
-                    </h2>
-                    <p class="text-on-surface-variant">
-                        A timeline of professional growth and technical leadership.
-                    </p>
-                </div>
-                <div
-                    class="space-y-24 relative before:absolute before:left-4 md:before:left-1/2 before:top-0 before:h-full before:w-[1px] before:bg-gradient-to-b before:from-primary before:via-secondary before:to-transparent">
-                    <!-- Team Leader -->
-                    <div class="relative flex flex-col md:flex-row gap-12 md:gap-0 items-start md:items-center">
-                        <div class="md:w-1/2 md:pr-16 pl-12 md:pl-0 text-left md:text-right">
-                            <span
-                                class="inline-block px-3 py-1 rounded-full bg-primary/20 text-primary font-bold text-xs uppercase tracking-widest">
-                                Aug 2025 — Present
-                            </span>
-                            <h3 class="font-headline text-3xl font-bold mt-4 mb-2">
-                                Team Leader
-                            </h3>
-                            <p class="text-primary font-semibold">
-                                Novami Infotech Pvt Ltd, Nashik
-                            </p>
-                            <ul class="mt-6 space-y-4 md:flex md:flex-col md:items-end">
-                                <li class="flex items-start gap-3 md:flex-row-reverse">
-                                    <span class="material-symbols-outlined text-primary mt-1">groups</span>
-                                    <span class="text-sm">Led cross-functional teams across PHP (CI3/CI4, Laravel)
-                                        and Node.js, improving sprint efficiency by
-                                        <strong>20%</strong>.</span>
-                                </li>
-                                <li class="flex items-start gap-3 md:flex-row-reverse">
-                                    <span class="material-symbols-outlined text-primary mt-1">smart_toy</span>
-                                    <span class="text-sm">Applied generative AI tools (ChatGPT, Copilot, Gemini,
-                                        Stitch) to automate scaffolding and accelerate
-                                        documentation.</span>
-                                </li>
-                                <li class="flex items-start gap-3 md:flex-row-reverse">
-                                    <span class="material-symbols-outlined text-primary mt-1">architecture</span>
-                                    <span class="text-sm">Defined scalable architecture patterns and coding
-                                        standards to enhance maintainability and
-                                        reliability.</span>
-                                </li>
-                                <li class="flex items-start gap-3 md:flex-row-reverse">
-                                    <span class="material-symbols-outlined text-primary mt-1">api</span>
-                                    <span class="text-sm">Designed and deployed secure RESTful APIs enabling mobile
-                                        app and third-party integrations.</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <div
-                            class="absolute left-4 md:left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-primary border-4 border-surface shadow-[0_0_15px_#c180ff] animate-pulse">
-                        </div>
-                        <div class="md:w-1/2 md:pl-16">
-                            <div class="glass-panel p-1 rounded-xl">
-                                <img alt="Team leadership and architecture visualization"
-                                    class="rounded-lg w-full h-48 object-cover opacity-80 hover:opacity-100 transition"
-                                    src="assets/images/TL.jpg" />
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Sr PHP Developer -->
-                    <div class="relative flex flex-col md:flex-row gap-12 md:gap-0 items-start md:items-center">
-                        <!-- Left side: image -->
-                        <div class="md:w-1/2 md:pr-16 order-2 md:order-1">
-                            <div class="glass-panel p-1 rounded-xl">
-                                <img alt="Lab management portal dashboard"
-                                    class="rounded-lg w-full h-48 object-cover opacity-80 hover:opacity-100 transition"
-                                    src="assets/images/SR.png" />
-                            </div>
-                        </div>
-
-                        <!-- Timeline dot -->
-                        <div
-                            class="absolute left-4 md:left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-primary border-4 border-surface shadow-[0_0_15px_#c180ff] animate-pulse">
-                        </div>
-
-                        <!-- Right side: text -->
-                        <div class="md:w-1/2 md:pl-16 pl-12 md:pl-16 order-1 md:order-2 text-left md:text-left">
-                            <span
-                                class="inline-block px-3 py-1 rounded-full bg-primary/20 text-primary font-bold text-xs uppercase tracking-widest">
-                                Apr 2025 — Jul 2025
-                            </span>
-                            <h3 class="font-headline text-3xl font-bold mt-4 mb-2">
-                                Sr PHP Developer
-                            </h3>
-                            <p class="text-secondary font-semibold">
-                                Novami Infotech Pvt Ltd, Nashik
-                            </p>
-                            <ul class="mt-6 space-y-4">
-                                <li class="flex items-start gap-3">
-                                    <span class="material-symbols-outlined text-primary mt-1">science</span>
-                                    <span class="text-sm">Engineered a Lab Management Portal reducing manual
-                                        processing time by <strong>40%</strong>.</span>
-                                </li>
-                                <li class="flex items-start gap-3">
-                                    <span class="material-symbols-outlined text-primary mt-1">security</span>
-                                    <span class="text-sm">Developed a Service & Maintenance Portal with secure OTP
-                                        authentication and Chart.js dashboards.</span>
-                                </li>
-                                <li class="flex items-start gap-3">
-                                    <span class="material-symbols-outlined text-primary mt-1">database</span>
-                                    <span class="text-sm">Optimized MySQL queries for scalability and deployed apps
-                                        on GoDaddy hosting.</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- PHP Developer -->
-                    <div class="relative flex flex-col md:flex-row gap-12 md:gap-0 items-start md:items-center">
-                        <div class="md:w-1/2 md:pr-16 pl-12 md:pl-0 text-left md:text-right">
-                            <span
-                                class="inline-block px-3 py-1 rounded-full bg-primary/20 text-primary font-bold text-xs uppercase tracking-widest">
-                                Nov 2021 — Apr 2025
-                            </span>
-                            <h3 class="font-headline text-3xl font-bold mt-4 mb-2">
-                                PHP Developer
-                            </h3>
-                            <p class="text-secondary font-semibold">
-                                ESDS Software Solutions Pvt Ltd, Nashik
-                            </p>
-                            <ul class="mt-6 space-y-4 md:flex md:flex-col md:items-end">
-                                <li class="flex items-start gap-3 md:flex-row-reverse">
-                                    <span class="material-symbols-outlined text-primary mt-1">code</span>
-                                    <span class="text-sm">Developed backend modules in PHP/CodeIgniter using MVC
-                                        architecture to ensure maintainability and
-                                        scalability.</span>
-                                </li>
-                                <li class="flex items-start gap-3 md:flex-row-reverse">
-                                    <span class="material-symbols-outlined text-primary mt-1">mail</span>
-                                    <span class="text-sm">Built RESTful API endpoints and integrated SMTP services
-                                        for automated email notifications.</span>
-                                </li>
-                                <li class="flex items-start gap-3 md:flex-row-reverse">
-                                    <span class="material-symbols-outlined text-primary mt-1">storage</span>
-                                    <span class="text-sm">Optimized SQL queries in MySQL/PostgreSQL to improve
-                                        responsiveness and support complex data processing.</span>
-                                </li>
-                                <li class="flex items-start gap-3 md:flex-row-reverse">
-                                    <span class="material-symbols-outlined text-primary mt-1">devices</span>
-                                    <span class="text-sm">Collaborated with frontend teams to deliver responsive
-                                        interfaces using HTML, CSS, Bootstrap, JavaScript, and
-                                        AJAX.</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <div
-                            class="absolute left-4 md:left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-primary border-4 border-surface shadow-[0_0_15px_#c180ff] animate-pulse">
-                        </div>
-                        <div class="md:w-1/2 md:pl-16">
-                            <div class="glass-panel p-1 rounded-xl">
-                                <img alt="Backend development and API integration"
-                                    class="rounded-lg w-full h-48 object-cover opacity-80 hover:opacity-100 transition"
-                                    src="assets/images/API.png" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Certifications -->
-        <section class="py-32" id="certifications">
-            <div class="max-w-[1440px] mx-auto px-8 md:px-24">
-                <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
-                    <div class="max-w-xl">
-                        <h2
-                            class="font-headline text-headline-lg font-bold mb-4 bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent drop-shadow-[0_0_10px_rgba(163,166,255,0.7)]">
-                            Certifications
-                        </h2>
-                        <p class="text-on-surface-variant">
-                            Continuous learning and professional verification from
-                            recognized industry leaders.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
-
-                    <!-- PHP Laravel Certification -->
-                    <a href="https://www.udemy.com/certificate/UC-c746edf4-f67b-4e7f-ab6e-3b006975f80e/" target="_blank"
-                        class="no-underline">
-                        <div
-                            class="p-6 rounded-xl bg-gradient-to-br from-indigo-500/10 to-purple-500/10 border border-outline-variant hover:shadow-[0_0_20px_#c180ff] hover:scale-105 transition-all duration-300 flex flex-col items-center text-center gap-4">
-                            <div class="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center">
-                                <span class="material-symbols-outlined text-primary">verified</span>
-                            </div>
-                            <div>
-                                <h4 class="font-headline font-bold text-sm">
-                                    PHP Laravel Certification
-                                </h4>
-                                <span class="text-[0.65rem] font-label uppercase text-on-surface-variant">Udemy (Dec
-                                    2025)</span>
-                            </div>
-                        </div>
-                    </a>
-
-                    <!-- Back End Development & APIs -->
-                    <a href="https://www.freecodecamp.org/certification/manepooja0000/back-end-development-and-apis"
-                        target="_blank" class="no-underline">
-                        <div
-                            class="p-6 rounded-xl bg-gradient-to-br from-cyan-500/10 to-blue-500/10 border border-outline-variant hover:shadow-[0_0_20px_#00ffff] hover:scale-105 transition-all duration-300 flex flex-col items-center text-center gap-4">
-                            <div class="w-16 h-16 bg-secondary/20 rounded-full flex items-center justify-center">
-                                <span class="material-symbols-outlined text-secondary">api</span>
-                            </div>
-                            <div>
-                                <h4 class="font-headline font-bold text-sm">
-                                    Back End Development & APIs
-                                </h4>
-                                <span class="text-[0.65rem] font-label uppercase text-on-surface-variant">freeCodeCamp
-                                    (Sep 2025)</span>
-                            </div>
-                        </div>
-                    </a>
-
-                    <!-- Responsive Web Design -->
-                    <a href="https://www.freecodecamp.org/certification/manepooja0000/responsive-web-design"
-                        target="_blank" class="no-underline">
-                        <div
-                            class="p-6 rounded-xl bg-gradient-to-br from-pink-500/10 to-purple-500/10 border border-outline-variant hover:shadow-[0_0_20px_#ff66cc] hover:scale-105 transition-all duration-300 flex flex-col items-center text-center gap-4">
-                            <div class="w-16 h-16 bg-tertiary/20 rounded-full flex items-center justify-center">
-                                <span class="material-symbols-outlined text-tertiary">devices</span>
-                            </div>
-                            <div>
-                                <h4 class="font-headline font-bold text-sm">
-                                    Responsive Web Design
-                                </h4>
-                                <span class="text-[0.65rem] font-label uppercase text-on-surface-variant">freeCodeCamp
-                                    (Aug 2025)</span>
-                            </div>
-                        </div>
-                    </a>
-
-                    <!-- Node JS Certification -->
-                    <a href="https://moonshot.scaler.com/s/sl/HzkM1SbZOJ" target="_blank" class="no-underline">
-                        <div
-                            class="p-6 rounded-xl bg-gradient-to-br from-green-500/10 to-emerald-500/10 border border-outline-variant hover:shadow-[0_0_20px_#00ff99] hover:scale-105 transition-all duration-300 flex flex-col items-center text-center gap-4">
-                            <div
-                                class="w-16 h-16 bg-primary-container/20 rounded-full flex items-center justify-center">
-                                <span class="material-symbols-outlined text-primary-container">javascript</span>
-                            </div>
-                            <div>
-                                <h4 class="font-headline font-bold text-sm">
-                                    Node JS Certification
-                                </h4>
-                                <span class="text-[0.65rem] font-label uppercase text-on-surface-variant">Scalar (Jun
-                                    2024)</span>
-                            </div>
-                        </div>
-                    </a>
-
-                </div>
-            </div>
-        </section>
-
-
-        <!-- Contact Section -->
-        <section class="py-32 bg-gradient-to-br from-indigo-950 via-slate-900 to-purple-950 relative overflow-hidden"
-            id="contact">
+      <!-- Hero Section -->
+      <section
+        class="relative min-h-screen flex items-center pt-20 overflow-hidden"
+      >
+        <div class="absolute inset-0 z-0">
+          <div
+            class="absolute top-[-10%] left-[-5%] w-[50%] h-[50%] bg-primary/10 blur-[120px] rounded-full"
+          ></div>
+          <div
+            class="absolute bottom-[-10%] right-[-5%] w-[40%] h-[40%] bg-secondary/10 blur-[120px] rounded-full"
+          ></div>
+        </div>
+        <div
+          class="relative z-10 max-w-[1440px] mx-auto px-8 md:px-24 grid md:grid-cols-12 gap-12 items-center"
+        >
+          <div class="md:col-span-8">
             <div
-                class="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-background to-transparent pointer-events-none">
+              class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-outline-variant bg-surface-container-low mb-6"
+            >
+              <span
+                class="w-2 h-2 rounded-full bg-tertiary animate-pulse"
+              ></span>
+              <span
+                class="animate-shine text-[0.65rem] font-label uppercase tracking-widest font-bold text-on-surface-variant"
+                >Available for new opportunities</span
+              >
             </div>
+            <h1
+              class="font-headline text-4xl sm:text-5xl md:text-6xl lg:text-[5.5rem] leading-[1] font-bold tracking-tight mb-8"
+            >
+              <span class="block">Pooja Mane</span>
+              <span
+                class="block text-3xl sm:text-4xl md:text-5xl lg:text-6xl mt-4"
+              >
+                <span
+                  id="typing-text"
+                  class="text-on-surface"
+                  style="color: #c180ff"
+                ></span
+                ><span class="cursor"></span>
+              </span>
+              <span
+                class="block text-3xl sm:text-4xl md:text-5xl lg:text-6xl mt-4 text-on-surface"
+              >
+                Senior Full Stack Developer & Team Leader
+              </span>
+            </h1>
+            <p
+              class="text-lg md:text-xl text-on-surface-variant max-w-2xl leading-relaxed mb-10"
+            >
+              Delivering tailored ERP, CRM, and E‑commerce solutions with
+              expertise in RESTful APIs, responsive UI, and secure payment
+              integrations. Focused on building scalable applications that
+              streamline operations, reduce manual effort, and drive business
+              growth.
+              <br /><i
+                >Turning complex workflows into simple digital solutions.</i
+              >
+            </p>
+            <div class="flex flex-wrap gap-6">
+              <a
+                class="bg-gradient-to-r from-primary to-primary-container text-on-primary-fixed px-8 py-4 rounded-xl font-headline font-bold uppercase tracking-wider transition-all hover:shadow-[0_0_20px_rgba(163,166,255,0.4)]"
+                href="#contact"
+              >
+                Let's Connect
+              </a>
+              <a
+                class="inline-flex items-center gap-2 border border-outline-variant px-8 py-4 rounded-xl font-headline font-bold uppercase tracking-wider hover:bg-surface-bright transition-all"
+                href="#experience"
+              >
+                View Work
+                <span class="material-symbols-outlined text-sm"
+                  >arrow_forward</span
+                >
+              </a>
+            </div>
+          </div>
+          <div class="md:col-span-4 hidden md:block">
+            <div
+              class="relative aspect-square rounded-2xl overflow-hidden border border-outline-variant p-2 bg-surface-container"
+            >
+              <img
+                alt="Pooja Mane"
+                class="w-full h-full object-cover rounded-xl transition-all duration-700"
+                data-alt="Professional portrait of Pooja Mane, Senior Full Stack Developer"
+                src="assets/images/photo.jpg"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
 
-            <div class="max-w-[1440px] mx-auto px-4 md:px-20 lg:px-24 relative z-10 min-w-0">
-                <!-- Contact Info -->
-                <div class="w-full text-center">
-
-                    <!-- Heading -->
-                    <h2 class="font-headline text-2xl sm:text-3xl md:text-5xl font-bold mb-6 sm:mb-8">
-                        Let's build something
-                        <span
-                            class="bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent drop-shadow-[0_0_12px_rgba(163,166,255,0.6)]">
-                            extraordinary.
-                        </span>
-                    </h2>
-
-                    <!-- Subheading -->
-                    <p class="text-white/80 text-base sm:text-lg mb-12">
-                        Focused on building innovative systems with strong teams, I’m open to projects that challenge
-                        and inspire.
-                    </p>
-
-                    <!-- Horizontal Contact Cards -->
-                    <div class="flex flex-col lg:flex-row justify-center gap-8">
-
-                        <!-- Email -->
-                        <a href="mailto:manepooja0000@gmail.com"
-                            class="flex items-center gap-4 group p-4 rounded-xl hover:shadow-[0_0_15px_#c180ff] transition-all w-full lg:w-auto">
-                            <div
-                                class="w-14 h-14 bg-surface-container-highest rounded-xl flex items-center justify-center group-hover:bg-primary transition-colors">
-                                <span
-                                    class="material-symbols-outlined text-on-surface-variant group-hover:text-on-primary-fixed">mail</span>
-                            </div>
-                            <div class="text-left">
-                                <span
-                                    class="block text-xs font-label uppercase tracking-widest text-on-surface-variant mb-1">Email
-                                    Me</span>
-                                <span class="text-lg font-bold break-words">manepooja0000@gmail.com</span>
-                            </div>
-                        </a>
-
-                        <!-- WhatsApp -->
-                        <a href="https://wa.me/919527676118?text=Hi%20Pooja,%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20connect."
-                            target="_blank"
-                            class="flex items-center gap-4 group p-4 rounded-xl hover:shadow-[0_0_15px_#25D366] transition-all w-full lg:w-auto">
-                            <div
-                                class="w-14 h-14 bg-surface-container-highest rounded-xl flex items-center justify-center group-hover:bg-green-600 transition-colors">
-                                <span
-                                    class="material-symbols-outlined text-on-surface-variant group-hover:text-on-primary-fixed">chat</span>
-                            </div>
-                            <div class="text-left">
-                                <span
-                                    class="block text-xs font-label uppercase tracking-widest text-on-surface-variant mb-1">WhatsApp
-                                    Me</span>
-                                <span class="text-lg font-bold">Message Directly</span>
-                            </div>
-                        </a>
-
-                        <!-- Location -->
-                        <div
-                            class="flex items-center gap-4 group p-4 rounded-xl hover:shadow-[0_0_15px_#00ff99] transition-all w-full lg:w-auto">
-                            <div
-                                class="w-14 h-14 bg-surface-container-highest rounded-xl flex items-center justify-center group-hover:bg-tertiary transition-colors">
-                                <span
-                                    class="material-symbols-outlined text-on-surface-variant group-hover:text-on-primary-fixed">location_on</span>
-                            </div>
-                            <div class="text-left">
-                                <span
-                                    class="block text-xs font-label uppercase tracking-widest text-on-surface-variant mb-1">Based
-                                    In</span>
-                                <span class="text-lg font-bold">Nashik, Maharashtra, India</span>
-                            </div>
-                        </div>
-
-                    </div>
+      <section class="py-24 md:py-32" id="skills">
+        <div class="max-w-[1440px] mx-auto px-8 md:px-24">
+          <div class="mb-16 md:mb-20 text-center">
+            <h2
+              class="font-headline text-headline-lg font-bold mb-4 text-white drop-shadow-[0_0_10px_rgba(163,166,255,0.7)]"
+            >
+              Technical Proficiency
+            </h2>
+            <p class="text-on-surface-variant max-w-xl mx-auto">
+              Comprehensive stack covering frontend, backend, databases, and
+              modern development tools.
+            </p>
+          </div>
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8"
+          >
+            <!-- Backend -->
+            <div
+              class="p-6 sm:p-10 rounded-xl shadow-lg bg-gradient-to-br from-secondary/10 to-secondary/20 hover:scale-105 transition-transform"
+            >
+              <div class="flex items-center gap-4 mb-6">
+                <div
+                  class="w-12 h-12 rounded-full bg-secondary/20 flex items-center justify-center"
+                >
+                  <span class="material-symbols-outlined text-primary"
+                    >terminal</span
+                  >
                 </div>
+                <h3 class="font-headline font-bold text-xl m-0">Backend</h3>
+              </div>
+              <div class="flex flex-wrap gap-3">
+                <span class="badge">PHP</span>
+                <span class="badge">Laravel</span>
+                <span class="badge">CodeIgniter 3/4</span>
+                <span class="badge">Node.js (Express)</span>
+                <span class="badge">Python</span>
+              </div>
             </div>
-        </section>
+            <!-- Frontend -->
+            <div
+              class="p-6 sm:p-10 rounded-xl shadow-lg bg-gradient-to-br from-primary/10 to-primary/20 hover:scale-105 transition-transform"
+            >
+              <div class="flex items-center gap-4 mb-6">
+                <div
+                  class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center"
+                >
+                  <span class="material-symbols-outlined text-primary"
+                    >developer_board</span
+                  >
+                </div>
+                <h3 class="font-headline font-bold text-xl m-0">Frontend</h3>
+              </div>
+              <div class="flex flex-wrap gap-3">
+                <span class="badge">HTML5/CSS3</span>
+                <span class="badge">JavaScript</span>
+                <span class="badge">Bootstrap</span>
+                <span class="badge">Tailwind CSS</span>
+                <span class="badge">AJAX/jQuery</span>
+              </div>
+            </div>
+            <!-- Databases -->
+            <div
+              class="p-6 sm:p-10 rounded-xl shadow-lg bg-gradient-to-br from-tertiary/10 to-tertiary/20 hover:scale-105 transition-transform"
+            >
+              <div class="flex items-center gap-4 mb-6">
+                <div
+                  class="w-12 h-12 rounded-full bg-tertiary/20 flex items-center justify-center"
+                >
+                  <span class="material-symbols-outlined text-tertiary"
+                    >storage</span
+                  >
+                </div>
+                <h3 class="font-headline font-bold text-xl m-0">Databases</h3>
+              </div>
+              <div class="flex flex-wrap gap-3">
+                <span class="badge">MySQL</span>
+                <span class="badge">PostgreSQL</span>
+                <span class="badge">MongoDB</span>
+                <span class="badge">SQL Optimization</span>
+              </div>
+            </div>
+            <!-- Tools & AI -->
+            <div
+              class="p-6 sm:p-10 rounded-xl shadow-lg bg-gradient-to-br from-on-surface-variant/10 to-on-surface-variant/20 hover:scale-105 transition-transform"
+            >
+              <div class="flex items-center gap-4 mb-6">
+                <div
+                  class="w-12 h-12 rounded-full bg-on-surface-variant/20 flex items-center justify-center"
+                >
+                  <span
+                    class="material-symbols-outlined text-on-surface-variant"
+                    >settings_suggest</span
+                  >
+                </div>
+                <h3 class="font-headline font-bold text-xl m-0">Tools & AI</h3>
+              </div>
+              <div class="flex flex-wrap gap-3">
+                <span class="badge">Git/GitHub</span>
+                <span class="badge">Postman</span>
+                <span class="badge">AWS/GoDaddy</span>
+                <span class="badge">GitHub Copilot</span>
+                <span class="badge">ChatGPT</span>
+                <span class="badge">Gemini</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <!-- Experience Section -->
+      <section class="py-32 bg-surface-container-low" id="experience">
+        <div class="max-w-[1440px] mx-auto px-8 md:px-24">
+          <div class="mb-20 text-center">
+            <h2
+              class="font-headline text-headline-lg font-bold mb-4 text-white drop-shadow-[0_0_10px_rgba(163,166,255,0.7)]"
+            >
+              Work Experience
+            </h2>
+            <p class="text-on-surface-variant">
+              A timeline of professional growth and technical leadership.
+            </p>
+          </div>
+          <div
+            class="space-y-24 relative before:absolute before:left-4 md:before:left-1/2 before:top-0 before:h-full before:w-[1px] before:bg-gradient-to-b before:from-primary before:via-secondary before:to-transparent"
+          >
+            <!-- Team Leader -->
+            <div
+              class="relative flex flex-col md:flex-row gap-12 md:gap-0 items-start md:items-center"
+            >
+              <div
+                class="md:w-1/2 md:pr-16 pl-12 md:pl-0 text-left md:text-right"
+              >
+                <span
+                  class="inline-block px-3 py-1 rounded-full bg-primary/20 text-primary font-bold text-xs uppercase tracking-widest"
+                >
+                  Aug 2025 — Present
+                </span>
+                <h3 class="font-headline text-3xl font-bold mt-4 mb-2">
+                  Team Leader
+                </h3>
+                <p class="text-primary font-semibold">
+                  Novami Infotech Pvt Ltd, Nashik
+                </p>
+                <ul class="mt-6 space-y-4 md:flex md:flex-col md:items-end">
+                  <li class="flex items-start gap-3 md:flex-row-reverse">
+                    <span class="material-symbols-outlined text-primary mt-1"
+                      >groups</span
+                    >
+                    <span class="text-sm"
+                      >Led cross-functional teams across PHP (CI3/CI4, Laravel)
+                      and Node.js, improving sprint efficiency by
+                      <strong>20%</strong>.</span
+                    >
+                  </li>
+                  <li class="flex items-start gap-3 md:flex-row-reverse">
+                    <span class="material-symbols-outlined text-primary mt-1"
+                      >smart_toy</span
+                    >
+                    <span class="text-sm"
+                      >Applied generative AI tools (ChatGPT, Copilot, Gemini,
+                      Stitch) to automate scaffolding and accelerate
+                      documentation.</span
+                    >
+                  </li>
+                  <li class="flex items-start gap-3 md:flex-row-reverse">
+                    <span class="material-symbols-outlined text-primary mt-1"
+                      >architecture</span
+                    >
+                    <span class="text-sm"
+                      >Defined scalable architecture patterns and coding
+                      standards to enhance maintainability and
+                      reliability.</span
+                    >
+                  </li>
+                  <li class="flex items-start gap-3 md:flex-row-reverse">
+                    <span class="material-symbols-outlined text-primary mt-1"
+                      >api</span
+                    >
+                    <span class="text-sm"
+                      >Designed and deployed secure RESTful APIs enabling mobile
+                      app and third-party integrations.</span
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="absolute left-4 md:left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-primary border-4 border-surface shadow-[0_0_15px_#c180ff] animate-pulse"
+              ></div>
+              <div class="md:w-1/2 md:pl-16">
+                <div class="glass-panel p-1 rounded-xl">
+                  <img
+                    alt="Team leadership and architecture visualization"
+                    class="rounded-lg w-full h-48 object-cover opacity-80 hover:opacity-100 transition"
+                    src="assets/images/TL.jpg"
+                  />
+                </div>
+              </div>
+            </div>
 
+            <!-- Sr PHP Developer -->
+            <div
+              class="relative flex flex-col md:flex-row gap-12 md:gap-0 items-start md:items-center"
+            >
+              <!-- Left side: image -->
+              <div class="md:w-1/2 md:pr-16 order-2 md:order-1">
+                <div class="glass-panel p-1 rounded-xl">
+                  <img
+                    alt="Lab management portal dashboard"
+                    class="rounded-lg w-full h-48 object-cover opacity-80 hover:opacity-100 transition"
+                    src="assets/images/SR.png"
+                  />
+                </div>
+              </div>
+
+              <!-- Timeline dot -->
+              <div
+                class="absolute left-4 md:left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-primary border-4 border-surface shadow-[0_0_15px_#c180ff] animate-pulse"
+              ></div>
+
+              <!-- Right side: text -->
+              <div
+                class="md:w-1/2 md:pl-16 pl-12 md:pl-16 order-1 md:order-2 text-left md:text-left"
+              >
+                <span
+                  class="inline-block px-3 py-1 rounded-full bg-primary/20 text-primary font-bold text-xs uppercase tracking-widest"
+                >
+                  Apr 2025 — Jul 2025
+                </span>
+                <h3 class="font-headline text-3xl font-bold mt-4 mb-2">
+                  Sr PHP Developer
+                </h3>
+                <p class="text-secondary font-semibold">
+                  Novami Infotech Pvt Ltd, Nashik
+                </p>
+                <ul class="mt-6 space-y-4">
+                  <li class="flex items-start gap-3">
+                    <span class="material-symbols-outlined text-primary mt-1"
+                      >science</span
+                    >
+                    <span class="text-sm"
+                      >Engineered a Lab Management Portal reducing manual
+                      processing time by <strong>40%</strong>.</span
+                    >
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <span class="material-symbols-outlined text-primary mt-1"
+                      >security</span
+                    >
+                    <span class="text-sm"
+                      >Developed a Service & Maintenance Portal with secure OTP
+                      authentication and Chart.js dashboards.</span
+                    >
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <span class="material-symbols-outlined text-primary mt-1"
+                      >database</span
+                    >
+                    <span class="text-sm"
+                      >Optimized MySQL queries for scalability and deployed apps
+                      on GoDaddy hosting.</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- PHP Developer -->
+            <div
+              class="relative flex flex-col md:flex-row gap-12 md:gap-0 items-start md:items-center"
+            >
+              <div
+                class="md:w-1/2 md:pr-16 pl-12 md:pl-0 text-left md:text-right"
+              >
+                <span
+                  class="inline-block px-3 py-1 rounded-full bg-primary/20 text-primary font-bold text-xs uppercase tracking-widest"
+                >
+                  Nov 2021 — Apr 2025
+                </span>
+                <h3 class="font-headline text-3xl font-bold mt-4 mb-2">
+                  PHP Developer
+                </h3>
+                <p class="text-secondary font-semibold">
+                  ESDS Software Solutions Pvt Ltd, Nashik
+                </p>
+                <ul class="mt-6 space-y-4 md:flex md:flex-col md:items-end">
+                  <li class="flex items-start gap-3 md:flex-row-reverse">
+                    <span class="material-symbols-outlined text-primary mt-1"
+                      >code</span
+                    >
+                    <span class="text-sm"
+                      >Developed backend modules in PHP/CodeIgniter using MVC
+                      architecture to ensure maintainability and
+                      scalability.</span
+                    >
+                  </li>
+                  <li class="flex items-start gap-3 md:flex-row-reverse">
+                    <span class="material-symbols-outlined text-primary mt-1"
+                      >mail</span
+                    >
+                    <span class="text-sm"
+                      >Built RESTful API endpoints and integrated SMTP services
+                      for automated email notifications.</span
+                    >
+                  </li>
+                  <li class="flex items-start gap-3 md:flex-row-reverse">
+                    <span class="material-symbols-outlined text-primary mt-1"
+                      >storage</span
+                    >
+                    <span class="text-sm"
+                      >Optimized SQL queries in MySQL/PostgreSQL to improve
+                      responsiveness and support complex data processing.</span
+                    >
+                  </li>
+                  <li class="flex items-start gap-3 md:flex-row-reverse">
+                    <span class="material-symbols-outlined text-primary mt-1"
+                      >devices</span
+                    >
+                    <span class="text-sm"
+                      >Collaborated with frontend teams to deliver responsive
+                      interfaces using HTML, CSS, Bootstrap, JavaScript, and
+                      AJAX.</span
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="absolute left-4 md:left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-primary border-4 border-surface shadow-[0_0_15px_#c180ff] animate-pulse"
+              ></div>
+              <div class="md:w-1/2 md:pl-16">
+                <div class="glass-panel p-1 rounded-xl">
+                  <img
+                    alt="Backend development and API integration"
+                    class="rounded-lg w-full h-48 object-cover opacity-80 hover:opacity-100 transition"
+                    src="assets/images/API.png"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section class="py-32 bg-surface-container" id="projects">
+        <div class="max-w-[1440px] mx-auto px-8 md:px-24">
+          <div class="mb-20 text-center">
+            <h2
+              class="font-headline text-headline-lg font-bold mb-4 bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent drop-shadow-[0_0_10px_rgba(163,166,255,0.7)]"
+            >
+              Featured Projects
+            </h2>
+            <p class="text-on-surface-variant">
+              Showcasing innovative solutions in web development and automation.
+            </p>
+          </div>
+          <div class="grid md:grid-cols-2 gap-8">
+            <!-- Project 1 -->
+            <div
+              class="glass-panel p-6 rounded-xl hover:glow-hover transition-all duration-300 cursor-pointer project-card"
+              onclick="toggleProject(this)"
+            >
+              <div class="project-front">
+                <div class="flex items-center gap-3 mb-4">
+                  <span class="text-2xl">🌐</span>
+                  <h3 class="font-headline text-xl font-bold text-white">
+                    Solar Installation Management Platform
+                  </h3>
+                </div>
+                <p class="text-on-surface-variant mb-4">
+                  Enterprise solution for a solar installation company,
+                  automating maintenance workflows and centralizing
+                  client/project data.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span
+                    class="px-2 py-1 bg-primary/20 text-primary text-xs rounded-full"
+                    >PHP CI</span
+                  >
+                  <span
+                    class="px-2 py-1 bg-primary/20 text-primary text-xs rounded-full"
+                    >MySQL</span
+                  >
+                  <span
+                    class="px-2 py-1 bg-primary/20 text-primary text-xs rounded-full"
+                    >HTML/CSS/JS</span
+                  >
+                  <span
+                    class="px-2 py-1 bg-primary/20 text-primary text-xs rounded-full"
+                    >Firebase</span
+                  >
+                  <span
+                    class="px-2 py-1 bg-primary/20 text-primary text-xs rounded-full"
+                    >AWS EC2</span
+                  >
+                </div>
+                <p class="text-primary text-sm">Click to see full details</p>
+              </div>
+              <div class="project-back hidden">
+                <div class="flex items-center gap-3 mb-4">
+                  <span class="text-2xl">🌐</span>
+                  <h3 class="font-headline text-xl font-bold text-white">
+                    Solar Installation Management Platform (Maintenance + CRM)
+                  </h3>
+                </div>
+                <p class="text-on-surface-variant mb-4">
+                  Enterprise solution for a solar installation company,
+                  automating maintenance workflows and centralizing
+                  client/project data.
+                </p>
+                <h4 class="font-semibold text-white mb-2">Key Features:</h4>
+                <ul class="text-sm text-on-surface-variant mb-4 space-y-1">
+                  <li>
+                    • Automated maintenance sheet data entry and issue frequency
+                    analysis.
+                  </li>
+                  <li>
+                    • Role‑based task assignment and quotation generation.
+                  </li>
+                  <li>
+                    • Employee theory assessments and project progress tracking.
+                  </li>
+                </ul>
+                <h4 class="font-semibold text-white mb-2">Impact:</h4>
+                <p class="text-sm text-on-surface-variant">
+                  Eliminated manual work, improved task allocation, and
+                  centralized client documentation. Enhanced visibility into
+                  project progress and employee expertise.
+                </p>
+                <p class="text-primary text-sm mt-4">Click to collapse</p>
+              </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div
+              class="glass-panel p-6 rounded-xl hover:glow-hover transition-all duration-300 cursor-pointer project-card"
+              onclick="toggleProject(this)"
+            >
+              <div class="project-front">
+                <div class="flex items-center gap-3 mb-4">
+                  <span class="text-2xl">🖥</span>
+                  <h3 class="font-headline text-xl font-bold text-white">
+                    Employee Monitoring System
+                  </h3>
+                </div>
+                <p class="text-on-surface-variant mb-4">
+                  Custom monitoring software designed to track employee
+                  activity, productivity, and system usage in real time.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span
+                    class="px-2 py-1 bg-primary/20 text-primary text-xs rounded-full"
+                    >Python</span
+                  >
+                  <span
+                    class="px-2 py-1 bg-primary/20 text-primary text-xs rounded-full"
+                    >PHP CI API</span
+                  >
+                  <span
+                    class="px-2 py-1 bg-primary/20 text-primary text-xs rounded-full"
+                    >MySQL</span
+                  >
+                  <span
+                    class="px-2 py-1 bg-primary/20 text-primary text-xs rounded-full"
+                    >AWS EC2</span
+                  >
+                  <span
+                    class="px-2 py-1 bg-primary/20 text-primary text-xs rounded-full"
+                    >InnoSetup</span
+                  >
+                  <span
+                    class="px-2 py-1 bg-primary/20 text-primary text-xs rounded-full"
+                    >Firebase</span
+                  >
+                </div>
+                <p class="text-primary text-sm">Click to see full details</p>
+              </div>
+              <div class="project-back hidden">
+                <div class="flex items-center gap-3 mb-4">
+                  <span class="text-2xl">🖥</span>
+                  <h3 class="font-headline text-xl font-bold text-white">
+                    Employee Monitoring System (Python + PHP CI API)
+                  </h3>
+                </div>
+                <p class="text-on-surface-variant mb-4">
+                  Custom monitoring software designed to track employee
+                  activity, productivity, and system usage in real time.
+                </p>
+                <h4 class="font-semibold text-white mb-2">Key Features:</h4>
+                <ul class="text-sm text-on-surface-variant mb-4 space-y-1">
+                  <li>• Authenticated login via PHP CI API.</li>
+                  <li>
+                    • Logs user activity every 15 seconds (apps, browser tabs).
+                  </li>
+                  <li>
+                    • User‑defined unproductive apps (e.g., WhatsApp, YouTube)
+                    trigger auto‑screenshots for accountability.
+                  </li>
+                  <li>
+                    • Tracks productive vs. unproductive time, idle/break
+                    periods.
+                  </li>
+                  <li>• USB read/write/rename activity logging.</li>
+                  <li>• Admin dashboard for detailed productivity reports.</li>
+                </ul>
+                <h4 class="font-semibold text-white mb-2">Impact:</h4>
+                <p class="text-sm text-on-surface-variant">
+                  Provided transparency into employee performance. Enabled
+                  proactive management of unproductive activities. Strengthened
+                  data security and accountability.
+                </p>
+                <p class="text-primary text-sm mt-4">Click to collapse</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Certifications -->
+      <section class="py-32" id="certifications">
+        <div class="max-w-[1440px] mx-auto px-8 md:px-24">
+          <div
+            class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8"
+          >
+            <div class="max-w-xl">
+              <h2
+                class="font-headline text-headline-lg font-bold mb-4 bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent drop-shadow-[0_0_10px_rgba(163,166,255,0.7)]"
+              >
+                Certifications
+              </h2>
+              <p class="text-on-surface-variant">
+                Continuous learning and professional verification from
+                recognized industry leaders.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8"
+          >
+            <!-- PHP Laravel Certification -->
+            <a
+              href="https://www.udemy.com/certificate/UC-c746edf4-f67b-4e7f-ab6e-3b006975f80e/"
+              target="_blank"
+              class="no-underline"
+            >
+              <div
+                class="p-6 rounded-xl bg-gradient-to-br from-indigo-500/10 to-purple-500/10 border border-outline-variant hover:shadow-[0_0_20px_#c180ff] hover:scale-105 transition-all duration-300 flex flex-col items-center text-center gap-4"
+              >
+                <div
+                  class="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center"
+                >
+                  <span class="material-symbols-outlined text-primary"
+                    >verified</span
+                  >
+                </div>
+                <div>
+                  <h4 class="font-headline font-bold text-sm">
+                    PHP Laravel Certification
+                  </h4>
+                  <span
+                    class="text-[0.65rem] font-label uppercase text-on-surface-variant"
+                    >Udemy (Dec 2025)</span
+                  >
+                </div>
+              </div>
+            </a>
+
+            <!-- Back End Development & APIs -->
+            <a
+              href="https://www.freecodecamp.org/certification/manepooja0000/back-end-development-and-apis"
+              target="_blank"
+              class="no-underline"
+            >
+              <div
+                class="p-6 rounded-xl bg-gradient-to-br from-cyan-500/10 to-blue-500/10 border border-outline-variant hover:shadow-[0_0_20px_#00ffff] hover:scale-105 transition-all duration-300 flex flex-col items-center text-center gap-4"
+              >
+                <div
+                  class="w-16 h-16 bg-secondary/20 rounded-full flex items-center justify-center"
+                >
+                  <span class="material-symbols-outlined text-secondary"
+                    >api</span
+                  >
+                </div>
+                <div>
+                  <h4 class="font-headline font-bold text-sm">
+                    Back End Development & APIs
+                  </h4>
+                  <span
+                    class="text-[0.65rem] font-label uppercase text-on-surface-variant"
+                    >freeCodeCamp (Sep 2025)</span
+                  >
+                </div>
+              </div>
+            </a>
+
+            <!-- Responsive Web Design -->
+            <a
+              href="https://www.freecodecamp.org/certification/manepooja0000/responsive-web-design"
+              target="_blank"
+              class="no-underline"
+            >
+              <div
+                class="p-6 rounded-xl bg-gradient-to-br from-pink-500/10 to-purple-500/10 border border-outline-variant hover:shadow-[0_0_20px_#ff66cc] hover:scale-105 transition-all duration-300 flex flex-col items-center text-center gap-4"
+              >
+                <div
+                  class="w-16 h-16 bg-tertiary/20 rounded-full flex items-center justify-center"
+                >
+                  <span class="material-symbols-outlined text-tertiary"
+                    >devices</span
+                  >
+                </div>
+                <div>
+                  <h4 class="font-headline font-bold text-sm">
+                    Responsive Web Design
+                  </h4>
+                  <span
+                    class="text-[0.65rem] font-label uppercase text-on-surface-variant"
+                    >freeCodeCamp (Aug 2025)</span
+                  >
+                </div>
+              </div>
+            </a>
+
+            <!-- Node JS Certification -->
+            <a
+              href="https://moonshot.scaler.com/s/sl/HzkM1SbZOJ"
+              target="_blank"
+              class="no-underline"
+            >
+              <div
+                class="p-6 rounded-xl bg-gradient-to-br from-green-500/10 to-emerald-500/10 border border-outline-variant hover:shadow-[0_0_20px_#00ff99] hover:scale-105 transition-all duration-300 flex flex-col items-center text-center gap-4"
+              >
+                <div
+                  class="w-16 h-16 bg-primary-container/20 rounded-full flex items-center justify-center"
+                >
+                  <span class="material-symbols-outlined text-primary-container"
+                    >javascript</span
+                  >
+                </div>
+                <div>
+                  <h4 class="font-headline font-bold text-sm">
+                    Node JS Certification
+                  </h4>
+                  <span
+                    class="text-[0.65rem] font-label uppercase text-on-surface-variant"
+                    >Scalar (Jun 2024)</span
+                  >
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="py-32 bg-surface-container-low" id="about">
+        <div class="max-w-[1440px] mx-auto px-8 md:px-24">
+          <div class="grid md:grid-cols-2 gap-20 items-center">
+            <div>
+              <h2
+                class="font-headline text-headline-lg font-bold mb-8 flex items-center gap-4"
+              >
+                <span class="w-12 h-[2px] bg-secondary"></span>
+                Professional Summary
+              </h2>
+              <div
+                class="space-y-6 text-on-surface-variant text-lg leading-relaxed"
+              >
+                <p>
+                  Senior Full Stack Developer & Team Leader with 4+ years of
+                  experience delivering custom ERP, CRM, BFSI and E‑commerce
+                  solutions. Skilled in PHP (Laravel, CodeIgniter), Node.js and
+                  Python with hands‑on AWS deployments and secure payment
+                  integrations.
+                </p>
+                <p>
+                  Experienced in Agile leadership and performance optimization,
+                  leveraging generative AI tools (ChatGPT, Copilot, Gemini) to
+                  accelerate development and improve productivity.
+                </p>
+              </div>
+              <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-8">
+                <div>
+                  <span
+                    class="block text-4xl font-headline font-bold text-tertiary"
+                    >4+</span
+                  >
+                  <span
+                    class="font-label text-xs uppercase tracking-widest text-on-surface-variant"
+                    >Years Experience</span
+                  >
+                </div>
+                <div>
+                  <span
+                    class="block text-4xl font-headline font-bold text-primary"
+                    >Multiple</span
+                  >
+                  <span
+                    class="font-label text-xs uppercase tracking-widest text-on-surface-variant"
+                    >Scalable Domains</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div
+                class="glass-panel p-6 rounded-xl border border-white/5 glow-hover transition-all"
+              >
+                <span
+                  class="material-symbols-outlined text-primary text-3xl mb-4"
+                  data-icon="leaderboard"
+                  >leaderboard</span
+                >
+                <h3 class="font-headline font-bold mb-2">Team Leadership</h3>
+                <p class="text-sm text-on-surface-variant">
+                  Guiding cross-functional teams through Agile planning.
+                </p>
+              </div>
+              <div
+                class="glass-panel p-6 rounded-xl border border-white/5 sm:translate-y-8 glow-hover transition-all"
+              >
+                <span
+                  class="material-symbols-outlined text-primary text-3xl mb-4"
+                  data-icon="api"
+                  >api</span
+                >
+                <h3 class="font-headline font-bold mb-2">RESTful APIs</h3>
+                <p class="text-sm text-on-surface-variant">
+                  Designing secure &amp; efficient API integrations.
+                </p>
+              </div>
+              <div
+                class="glass-panel p-6 rounded-xl border border-white/5 glow-hover transition-all"
+              >
+                <span
+                  class="material-symbols-outlined text-tertiary text-3xl mb-4"
+                  data-icon="monitoring"
+                  >monitoring</span
+                >
+                <h3 class="font-headline font-bold mb-2">System Monitoring</h3>
+                <p class="text-sm text-on-surface-variant">
+                  Real-time visibility and system audit tools.
+                </p>
+              </div>
+              <div
+                class="glass-panel p-6 rounded-xl border border-white/5 sm:translate-y-8 glow-hover transition-all"
+              >
+                <span
+                  class="material-symbols-outlined text-primary-container text-3xl mb-4"
+                  data-icon="psychology"
+                  >psychology</span
+                >
+                <h3 class="font-headline font-bold mb-2">Gen AI Tools</h3>
+                <p class="text-sm text-on-surface-variant">
+                  Leveraging AI for accelerated development.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section
+        class="py-32 bg-gradient-to-br from-indigo-950 via-slate-900 to-purple-950 relative overflow-hidden"
+        id="contact"
+      >
+        <div
+          class="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-background to-transparent pointer-events-none"
+        ></div>
+
+        <div
+          class="max-w-[1440px] mx-auto px-4 md:px-20 lg:px-24 relative z-10 min-w-0"
+        >
+          <!-- Contact Info -->
+          <div class="w-full text-center">
+            <!-- Heading -->
+            <h2
+              class="font-headline text-2xl sm:text-3xl md:text-5xl font-bold mb-6 sm:mb-8"
+            >
+              Let's build something
+              <span
+                class="bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent drop-shadow-[0_0_12px_rgba(163,166,255,0.6)]"
+              >
+                extraordinary.
+              </span>
+            </h2>
+
+            <!-- Subheading -->
+            <p class="text-white/80 text-base sm:text-lg mb-12">
+              Focused on building innovative systems with strong teams, I’m open
+              to projects that challenge and inspire.
+            </p>
+
+            <!-- Horizontal Contact Cards -->
+            <div class="flex flex-col lg:flex-row justify-center gap-8">
+              <!-- Email -->
+              <a
+                href="mailto:manepooja0000@gmail.com"
+                class="flex items-center gap-4 group p-4 rounded-xl hover:shadow-[0_0_15px_#c180ff] transition-all w-full lg:w-auto"
+              >
+                <div
+                  class="w-14 h-14 bg-surface-container-highest rounded-xl flex items-center justify-center group-hover:bg-primary transition-colors"
+                >
+                  <span
+                    class="material-symbols-outlined text-on-surface-variant group-hover:text-on-primary-fixed"
+                    >mail</span
+                  >
+                </div>
+                <div class="text-left">
+                  <span
+                    class="block text-xs font-label uppercase tracking-widest text-on-surface-variant mb-1"
+                    >Email Me</span
+                  >
+                  <span class="text-lg font-bold break-words"
+                    >manepooja0000@gmail.com</span
+                  >
+                </div>
+              </a>
+
+              <!-- WhatsApp -->
+              <a
+                href="https://wa.me/919527676118?text=Hi%20Pooja,%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20connect."
+                target="_blank"
+                class="flex items-center gap-4 group p-4 rounded-xl hover:shadow-[0_0_15px_#25D366] transition-all w-full lg:w-auto"
+              >
+                <div
+                  class="w-14 h-14 bg-surface-container-highest rounded-xl flex items-center justify-center group-hover:bg-green-600 transition-colors"
+                >
+                  <span
+                    class="material-symbols-outlined text-on-surface-variant group-hover:text-on-primary-fixed"
+                    >chat</span
+                  >
+                </div>
+                <div class="text-left">
+                  <span
+                    class="block text-xs font-label uppercase tracking-widest text-on-surface-variant mb-1"
+                    >WhatsApp Me</span
+                  >
+                  <span class="text-lg font-bold">Message Directly</span>
+                </div>
+              </a>
+
+              <!-- Location -->
+              <div
+                class="flex items-center gap-4 group p-4 rounded-xl hover:shadow-[0_0_15px_#00ff99] transition-all w-full lg:w-auto"
+              >
+                <div
+                  class="w-14 h-14 bg-surface-container-highest rounded-xl flex items-center justify-center group-hover:bg-tertiary transition-colors"
+                >
+                  <span
+                    class="material-symbols-outlined text-on-surface-variant group-hover:text-on-primary-fixed"
+                    >location_on</span
+                  >
+                </div>
+                <div class="text-left">
+                  <span
+                    class="block text-xs font-label uppercase tracking-widest text-on-surface-variant mb-1"
+                    >Based In</span
+                  >
+                  <span class="text-lg font-bold"
+                    >Nashik, Maharashtra, India</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <!-- Footer -->
-    <footer class="bg-gradient-to-r from-indigo-950 via-slate-900 to-purple-950 py-6 mt-16 relative">
-        <!-- Divider Line -->
-        <div
-            class="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-indigo-400 via-purple-400 to-transparent">
+    <footer
+      class="bg-gradient-to-r from-indigo-950 via-slate-900 to-purple-950 py-6 mt-16 relative"
+    >
+      <!-- Divider Line -->
+      <div
+        class="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-indigo-400 via-purple-400 to-transparent"
+      ></div>
+
+      <div
+        class="max-w-[1440px] mx-auto px-8 md:px-24 flex flex-col md:flex-row items-center justify-between gap-6"
+      >
+        <!-- Left: Name -->
+        <h3
+          class="font-headline text-lg font-bold bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent drop-shadow-[0_0_6px_rgba(163,166,255,0.6)]"
+        >
+          POOJA MANE
+        </h3>
+
+        <!-- Center: Social Links (your icons kept as-is) -->
+        <div class="flex gap-6">
+          <a
+            class="font-['Manrope'] text-sm text-[#c180ff]/50 hover:text-[#c180ff] transition-colors"
+            href="https://github.com/PoojaMane-00"
+            target="_blank"
+            >GitHub</a
+          >
+          <a
+            class="font-['Manrope'] text-sm text-[#c180ff]/50 hover:text-[#c180ff] transition-colors"
+            href="https://www.linkedin.com/in/pooja-mane-"
+            target="_blank"
+            >LinkedIn</a
+          >
+          <a
+            class="font-['Manrope'] text-sm text-[#c180ff]/50 hover:text-[#c180ff] transition-colors"
+            href="mailto:manepooja0000@gmail.com"
+            >Email</a
+          >
         </div>
 
-        <div class="max-w-[1440px] mx-auto px-8 md:px-24 flex flex-col md:flex-row items-center justify-between gap-6">
-            <!-- Left: Name -->
-            <h3
-                class="font-headline text-lg font-bold bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent drop-shadow-[0_0_6px_rgba(163,166,255,0.6)]">
-                POOJA MANE
-            </h3>
-
-            <!-- Center: Social Links (your icons kept as-is) -->
-            <div class="flex gap-6">
-                <a class="font-['Manrope'] text-sm text-[#c180ff]/50 hover:text-[#c180ff] transition-colors"
-                    href="https://github.com/PoojaMane-00" target="_blank">GitHub</a>
-                <a class="font-['Manrope'] text-sm text-[#c180ff]/50 hover:text-[#c180ff] transition-colors"
-                    href="https://www.linkedin.com/in/pooja-mane-" target="_blank">LinkedIn</a>
-                <a class="font-['Manrope'] text-sm text-[#c180ff]/50 hover:text-[#c180ff] transition-colors"
-                    href="mailto:manepooja0000@gmail.com">Email</a>
-            </div>
-
-            <!-- Right: Copyright -->
-            <p class="text-xs text-white/70">
-                ©2026 Designed for Growt &amp; Impact.
-            </p>
-        </div>
+        <!-- Right: Copyright -->
+        <p class="text-xs text-white/70">
+          ©2026 Designed for Growt &amp; Impact.
+        </p>
+      </div>
     </footer>
 
     <script>
-        const text = "Custom Software Builder |";
-        const element = document.getElementById("typing-text");
-        const cursor = document.querySelector(".cursor");
-        let i = 0;
-        function typeWriter() {
-            if (i < text.length) {
-                element.innerHTML += text.charAt(i);
-                i++;
-                setTimeout(typeWriter, 100);
-            } else {
-                cursor.style.display = "none";
-            }
+      const text = "Custom Software Builder |";
+      const element = document.getElementById("typing-text");
+      const cursor = document.querySelector(".cursor");
+      let i = 0;
+      function typeWriter() {
+        if (i < text.length) {
+          element.innerHTML += text.charAt(i);
+          i++;
+          setTimeout(typeWriter, 100);
+        } else {
+          cursor.style.display = "none";
         }
-        document
-            .getElementById("menu-toggle")
-            .addEventListener("click", function () {
-                document
-                    .getElementById("nav-menu")
-                    .classList.toggle("-translate-x-full");
-            });
-        document
-            .getElementById("menu-close")
-            .addEventListener("click", function () {
-                document
-                    .getElementById("nav-menu")
-                    .classList.add("-translate-x-full");
-            });
-        document.querySelectorAll("#nav-menu a").forEach((link) => {
-            link.addEventListener("click", () => {
-                document
-                    .getElementById("nav-menu")
-                    .classList.add("-translate-x-full");
-            });
+      }
+      document
+        .getElementById("menu-toggle")
+        .addEventListener("click", function () {
+          document
+            .getElementById("nav-menu")
+            .classList.toggle("-translate-x-full");
         });
-        window.onload = typeWriter;
+      document
+        .getElementById("menu-close")
+        .addEventListener("click", function () {
+          document
+            .getElementById("nav-menu")
+            .classList.add("-translate-x-full");
+        });
+      document.querySelectorAll("#nav-menu a").forEach((link) => {
+        link.addEventListener("click", () => {
+          document
+            .getElementById("nav-menu")
+            .classList.add("-translate-x-full");
+        });
+      });
+      function toggleProject(card) {
+        const front = card.querySelector(".project-front");
+        const back = card.querySelector(".project-back");
+        front.classList.toggle("hidden");
+        back.classList.toggle("hidden");
+      }
+      window.onload = typeWriter;
     </script>
-</body>
-
+  </body>
 </html>
