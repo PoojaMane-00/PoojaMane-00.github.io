@@ -303,17 +303,36 @@
           class="relative z-10 max-w-[1440px] mx-auto px-8 md:px-24 grid md:grid-cols-12 gap-12 items-center"
         >
           <div class="md:col-span-8">
-            <div
-              class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-outline-variant bg-surface-container-low mb-6"
-            >
-              <span
-                class="w-2 h-2 rounded-full bg-tertiary animate-pulse"
-              ></span>
-              <span
-                class="animate-shine text-[0.65rem] font-label uppercase tracking-widest font-bold text-on-surface-variant"
-                >Available for new opportunities</span
+            <div class="flex gap-3 mb-6">
+              <!-- Availability badge -->
+              <div
+                class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-outline-variant bg-surface-container-low"
               >
+                <span
+                  class="w-2 h-2 rounded-full bg-tertiary animate-pulse"
+                ></span>
+                <span
+                  class="text-[0.65rem] font-label uppercase tracking-widest font-bold text-on-surface-variant"
+                >
+                  Available for new opportunities
+                </span>
+              </div>
+
+              <!-- Experience badge -->
+              <div
+                class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-outline-variant bg-surface-container-low"
+              >
+                <span class="material-symbols-outlined text-sm text-primary"
+                  >workspace_premium</span
+                >
+                <span
+                  class="text-[0.65rem] font-label uppercase tracking-widest font-bold text-on-surface-variant"
+                >
+                  <span id="hero-badge-experience">4.5</span> Years Experience
+                </span>
+              </div>
             </div>
+
             <h1
               class="font-headline text-4xl sm:text-5xl md:text-6xl lg:text-[5.5rem] leading-[1] font-bold tracking-tight mb-8"
             >
@@ -337,11 +356,10 @@
             <p
               class="text-lg md:text-xl text-on-surface-variant max-w-2xl leading-relaxed mb-10"
             >
-              Delivering tailored ERP, CRM, and E‑commerce solutions with
-              expertise in RESTful APIs, responsive UI, and secure payment
-              integrations. Focused on building scalable applications that
-              streamline operations, reduce manual effort, and drive business
-              growth.
+              Delivering tailored ERP, CRM BFSI and DMS solutions with expertise
+              in RESTful APIs, responsive UI and secure payment integrations.
+              Focused on building scalable applications that streamline
+              operations, reduce manual effort and drive business growth.
               <br /><i
                 >Turning complex workflows into simple digital solutions.</i
               >
@@ -388,7 +406,7 @@
               Technical Proficiency
             </h2>
             <p class="text-on-surface-variant max-w-xl mx-auto">
-              Comprehensive stack covering frontend, backend, databases, and
+              Comprehensive stack covering frontend, backend, databases and
               modern development tools.
             </p>
           </div>
@@ -412,8 +430,8 @@
               <div class="flex flex-wrap gap-3">
                 <span class="badge">PHP</span>
                 <span class="badge">Laravel</span>
-                <span class="badge">CodeIgniter 3/4</span>
                 <span class="badge">Node.js (Express)</span>
+                <span class="badge">CodeIgniter 3/4</span>
                 <span class="badge">Python</span>
               </div>
             </div>
@@ -433,7 +451,7 @@
               </div>
               <div class="flex flex-wrap gap-3">
                 <span class="badge">HTML5/CSS3</span>
-                <span class="badge">JavaScript</span>
+                <span class="badge">JavaScript/ES6+</span>
                 <span class="badge">Bootstrap</span>
                 <span class="badge">Tailwind CSS</span>
                 <span class="badge">AJAX/jQuery</span>
@@ -476,9 +494,9 @@
                 <h3 class="font-headline font-bold text-xl m-0">Tools & AI</h3>
               </div>
               <div class="flex flex-wrap gap-3">
+                <span class="badge">AWS/GoDaddy</span>
                 <span class="badge">Git/GitHub</span>
                 <span class="badge">Postman</span>
-                <span class="badge">AWS/GoDaddy</span>
                 <span class="badge">GitHub Copilot</span>
                 <span class="badge">ChatGPT</span>
                 <span class="badge">Gemini</span>
@@ -497,6 +515,12 @@
             >
               Work Experience
             </h2>
+            <p class="text-on-surface-variant mb-2">
+              <span class="text-primary font-bold" id="experience-years"
+                >4</span
+              >
+              Years of Professional Growth & Technical Leadership.
+            </p>
             <p class="text-on-surface-variant">
               A timeline of professional growth and technical leadership.
             </p>
@@ -527,40 +551,40 @@
                     <span class="material-symbols-outlined text-primary mt-1"
                       >groups</span
                     >
-                    <span class="text-sm"
-                      >Led cross-functional teams across PHP (CI3/CI4, Laravel)
-                      and Node.js, improving sprint efficiency by
-                      <strong>20%</strong>.</span
-                    >
+                    <span class="text-sm">
+                      Led cross-functional teams across PHP (CI3/CI4, Laravel)
+                      and Node.js, boosting sprint efficiency by
+                      <strong>20%</strong>.
+                    </span>
                   </li>
                   <li class="flex items-start gap-3 md:flex-row-reverse">
                     <span class="material-symbols-outlined text-primary mt-1"
                       >smart_toy</span
                     >
-                    <span class="text-sm"
-                      >Applied generative AI tools (ChatGPT, Copilot, Gemini,
-                      Stitch) to automate scaffolding and accelerate
-                      documentation.</span
-                    >
+                    <span class="text-sm">
+                      Applied generative AI tools (ChatGPT, Copilot, Gemini,
+                      Stitch) to automate code scaffolding and streamline
+                      documentation, reducing repetitive effort.
+                    </span>
                   </li>
                   <li class="flex items-start gap-3 md:flex-row-reverse">
                     <span class="material-symbols-outlined text-primary mt-1"
                       >architecture</span
                     >
-                    <span class="text-sm"
-                      >Defined scalable architecture patterns and coding
-                      standards to enhance maintainability and
-                      reliability.</span
-                    >
+                    <span class="text-sm">
+                      Defined scalable architecture patterns and coding
+                      standards, improving maintainability and accelerating
+                      developer onboarding.
+                    </span>
                   </li>
                   <li class="flex items-start gap-3 md:flex-row-reverse">
                     <span class="material-symbols-outlined text-primary mt-1"
                       >api</span
                     >
-                    <span class="text-sm"
-                      >Designed and deployed secure RESTful APIs enabling mobile
-                      app and third-party integrations.</span
-                    >
+                    <span class="text-sm">
+                      Designed and deployed secure RESTful APIs, enabling
+                      seamless mobile app and third‑party integrations.
+                    </span>
                   </li>
                 </ul>
               </div>
@@ -698,7 +722,7 @@
                     >
                     <span class="text-sm"
                       >Collaborated with frontend teams to deliver responsive
-                      interfaces using HTML, CSS, Bootstrap, JavaScript, and
+                      interfaces using HTML, CSS, Bootstrap, JavaScript and
                       AJAX.</span
                     >
                   </li>
@@ -737,6 +761,358 @@
 
           <div class="grid md:grid-cols-2 gap-8">
             <div
+              class="glass-panel p-6 rounded-xl hover:glow-hover transition-all duration-300 cursor-pointer project-card"
+              onclick="toggleProject(this)"
+            >
+              <div class="project-front">
+                <div class="flex items-center gap-3 mb-4">
+                  <span class="text-2xl">📂</span>
+                  <h3 class="font-headline text-xl font-bold text-white">
+                    Enterprise Document Management System
+                  </h3>
+                </div>
+                <p class="text-on-surface-variant text-sm mb-4">
+                  A secure platform designed to digitize, track and govern
+                  document lifecycles with multi-role approvals, versioning and
+                  compliance-ready auditing.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span
+                    class="px-2 py-1 bg-primary/20 text-primary text-xs rounded-full"
+                  >
+                    PHP Laravel
+                  </span>
+                  <span
+                    class="px-2 py-1 bg-primary/20 text-primary text-xs rounded-full"
+                  >
+                    MySQL
+                  </span>
+                  <span
+                    class="px-2 py-1 bg-primary/20 text-primary text-xs rounded-full"
+                  >
+                    Tailwind CSS
+                  </span>
+                  <span
+                    class="px-2 py-1 bg-primary/20 text-primary text-xs rounded-full"
+                  >
+                    RBAC
+                  </span>
+                  <span
+                    class="px-2 py-1 bg-primary/20 text-primary text-xs rounded-full"
+                  >
+                    RESTful APIs
+                  </span>
+                </div>
+                <p class="text-primary text-sm">Click to see full details</p>
+              </div>
+              <div class="project-back hidden">
+                <div class="flex items-center gap-3 mb-4">
+                  <span class="text-2xl">📂</span>
+                  <h3 class="font-headline text-xl font-bold text-white">
+                    Document Lifecycle & Compliance Workflow
+                  </h3>
+                </div>
+                <p class="text-on-surface-variant text-sm mb-4">
+                  Architected a multi-department document management system to
+                  streamline approvals, enforce compliance and maintain
+                  audit-ready records for enterprise clients.
+                </p>
+                <h4 class="font-semibold text-white mb-2 text-sm">
+                  Key Features:
+                </h4>
+                <ul class="text-sm text-on-surface-variant mb-4 space-y-1">
+                  <li>
+                    • <b>Version Control:</b> Enabled document creation,
+                    editing, locking and restoration with full revision history.
+                  </li>
+                  <li>
+                    • <b>Approval Workflows:</b> Built reviewer/approver
+                    dashboards with multi-step verification and audit trails.
+                  </li>
+                  <li>
+                    • <b>Role-Based Access:</b> Implemented RBAC to manage
+                    permissions across departments and user levels.
+                  </li>
+                  <li>
+                    • <b>Notifications & Logs:</b> Integrated system alerts and
+                    activity tracking for compliance and transparency.
+                  </li>
+                </ul>
+                <h4 class="font-semibold text-white mb-2 text-sm">Impact:</h4>
+                <p class="text-sm text-on-surface-variant">
+                  Reduced manual bottlenecks in document approvals, improved
+                  operational visibility and ensured compliance with secure,
+                  auditable workflows.
+                </p>
+                <p class="text-primary text-sm mt-4">Click to collapse</p>
+              </div>
+            </div>
+
+            <div
+              class="glass-panel p-6 rounded-xl hover:glow-hover transition-all duration-300 cursor-pointer project-card"
+              onclick="toggleProject(this)"
+            >
+              <div class="project-front">
+                <div class="flex items-center gap-3 mb-4">
+                  <span class="text-2xl">⚙️</span>
+                  <h3 class="font-headline text-xl font-bold text-white">
+                    Industrial ERP System
+                  </h3>
+                </div>
+                <p class="text-on-surface-variant text-sm mb-4">
+                  A robust ERP platform tailored for manufacturing workflows,
+                  enabling secure access, compliance-ready tracking and
+                  streamlined operations across departments.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span
+                    class="px-2 py-1 bg-primary/20 text-primary text-xs rounded-full"
+                  >
+                    PHP Laravel
+                  </span>
+                  <span
+                    class="px-2 py-1 bg-primary/20 text-primary text-xs rounded-full"
+                  >
+                    MySQL
+                  </span>
+                  <span
+                    class="px-2 py-1 bg-primary/20 text-primary text-xs rounded-full"
+                  >
+                    Tailwind CSS
+                  </span>
+                  <span
+                    class="px-2 py-1 bg-primary/20 text-primary text-xs rounded-full"
+                  >
+                    ERP Modules
+                  </span>
+                  <span
+                    class="px-2 py-1 bg-primary/20 text-primary text-xs rounded-full"
+                  >
+                    RBAC
+                  </span>
+                </div>
+                <p class="text-primary text-sm">Click to see full details</p>
+              </div>
+              <div class="project-back hidden">
+                <div class="flex items-center gap-3 mb-4">
+                  <span class="text-2xl">⚙️</span>
+                  <h3 class="font-headline text-xl font-bold text-white">
+                    Manufacturing ERP Workflow System
+                  </h3>
+                </div>
+                <p class="text-on-surface-variant text-sm mb-4">
+                  Designed and deployed an ERP solution for Metal Finishing
+                  company to digitize industrial processes, enforce compliance,
+                  and improve operational efficiency.
+                </p>
+                <h4 class="font-semibold text-white mb-2 text-sm">
+                  Key Features:
+                </h4>
+                <ul class="text-sm text-on-surface-variant mb-4 space-y-1">
+                  <li>
+                    • <b>Secure Access:</b> Implemented login/authentication
+                    with access keys and role-based permissions.
+                  </li>
+                  <li>
+                    • <b>Departmental Workflows:</b> Enabled multi-role
+                    collaboration across production, compliance and
+                    administration.
+                  </li>
+                  <li>
+                    • <b>Compliance Tracking:</b> Integrated audit-ready logs to
+                    monitor approvals and operational changes.
+                  </li>
+                  <li>
+                    • <b>Scalable Architecture:</b> Built modular ERP components
+                    for manufacturing processes, adaptable to future expansions.
+                  </li>
+                </ul>
+                <h4 class="font-semibold text-white mb-2 text-sm">Impact:</h4>
+                <p class="text-sm text-on-surface-variant">
+                  Streamlined industrial operations by digitizing workflows,
+                  reduced manual errors and ensured compliance with secure,
+                  role-based governance.
+                </p>
+                <p class="text-primary text-sm mt-4">Click to collapse</p>
+              </div>
+            </div>
+
+            <div
+              class="glass-panel p-6 rounded-xl hover:glow-hover transition-all duration-300 cursor-pointer project-card"
+              onclick="toggleProject(this)"
+            >
+              <div class="project-front">
+                <div class="flex items-center gap-3 mb-4">
+                  <span class="text-2xl">🖥</span>
+                  <h3 class="font-headline text-xl font-bold text-white">
+                    Employee Monitoring System
+                  </h3>
+                </div>
+                <p class="text-on-surface-variant text-sm mb-4">
+                  Custom monitoring software designed to track employee
+                  activity, productivity and system usage in real time.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span
+                    class="px-2 py-1 bg-primary/20 text-primary text-xs rounded-full"
+                    >Python</span
+                  >
+                  <span
+                    class="px-2 py-1 bg-primary/20 text-primary text-xs rounded-full"
+                    >PHP Laravel API</span
+                  >
+                  <span
+                    class="px-2 py-1 bg-primary/20 text-primary text-xs rounded-full"
+                    >Node JS Express</span
+                  >
+                  <span
+                    class="px-2 py-1 bg-primary/20 text-primary text-xs rounded-full"
+                    >MySQL</span
+                  >
+                  <span
+                    class="px-2 py-1 bg-primary/20 text-primary text-xs rounded-full"
+                    >AWS EC2</span
+                  >
+                  <span
+                    class="px-2 py-1 bg-primary/20 text-primary text-xs rounded-full"
+                    >InnoSetup</span
+                  >
+                </div>
+                <p class="text-primary text-sm">Click to see full details</p>
+              </div>
+              <div class="project-back hidden">
+                <div class="flex items-center gap-3 mb-4">
+                  <span class="text-2xl">🖥</span>
+                  <h3 class="font-headline text-xl font-bold text-white">
+                    Employee Monitoring System (Python + PHP API)
+                  </h3>
+                </div>
+                <p class="text-on-surface-variant text-sm mb-4">
+                  Custom monitoring software designed to track employee
+                  activity, productivity and system usage in real time.
+                </p>
+                <h4 class="font-semibold text-white mb-2 text-sm">
+                  Key Features:
+                </h4>
+                <ul class="text-sm text-on-surface-variant mb-4 space-y-1">
+                  <li>• Authenticated login via PHP API.</li>
+                  <li>
+                    • Logs user activity every 15 seconds (apps, browser tabs).
+                  </li>
+                  <li>
+                    • User‑defined unproductive apps trigger auto‑screenshots
+                    for accountability.
+                  </li>
+                  <li>
+                    • Tracks productive vs. unproductive time, idle/break
+                    periods.
+                  </li>
+                  <li>• USB read/write/rename activity logging.</li>
+                  <li>• Admin dashboard for detailed productivity reports.</li>
+                </ul>
+                <h4 class="font-semibold text-white mb-2 text-sm">Impact:</h4>
+                <p class="text-sm text-on-surface-variant">
+                  Provided transparency into employee performance. Enabled
+                  proactive management of unproductive activities. Strengthened
+                  data security and accountability.
+                </p>
+                <p class="text-primary text-sm mt-4">Click to collapse</p>
+              </div>
+            </div>
+            <div
+              class="glass-panel p-6 rounded-xl hover:glow-hover transition-all duration-300 cursor-pointer project-card"
+              onclick="toggleProject(this)"
+            >
+              <div class="project-front">
+                <div class="flex items-center gap-3 mb-4">
+                  <span class="text-2xl">📊</span>
+                  <h3 class="font-headline text-xl font-bold text-white">
+                    Customer Relationship Management (CRM) Platform
+                  </h3>
+                </div>
+                <p class="text-on-surface-variant text-sm mb-4">
+                  A centralized CRM solution designed to manage leads, clients,
+                  and communication workflows, enabling businesses to strengthen
+                  customer engagement and streamline sales operations.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span
+                    class="px-2 py-1 bg-primary/20 text-primary text-xs rounded-full"
+                  >
+                    PHP Laravel
+                  </span>
+                  <span
+                    class="px-2 py-1 bg-primary/20 text-primary text-xs rounded-full"
+                  >
+                    MySQL
+                  </span>
+                  <span
+                    class="px-2 py-1 bg-primary/20 text-primary text-xs rounded-full"
+                  >
+                    AWS EC2
+                  </span>
+                  <span
+                    class="px-2 py-1 bg-primary/20 text-primary text-xs rounded-full"
+                  >
+                    Firebase
+                  </span>
+                  <span
+                    class="px-2 py-1 bg-primary/20 text-primary text-xs rounded-full"
+                  >
+                    RESTful APIs
+                  </span>
+                  <span
+                    class="px-2 py-1 bg-primary/20 text-primary text-xs rounded-full"
+                  >
+                    RBAC
+                  </span>
+                </div>
+                <p class="text-primary text-sm">Click to see full details</p>
+              </div>
+              <div class="project-back hidden">
+                <div class="flex items-center gap-3 mb-4">
+                  <span class="text-2xl">📊</span>
+                  <h3 class="font-headline text-xl font-bold text-white">
+                    Lead & Client Management System
+                  </h3>
+                </div>
+                <p class="text-on-surface-variant text-sm mb-4">
+                  Built a CRM platform to digitize customer interactions, track
+                  leads and automate communication pipelines for improved client
+                  retention and business growth.
+                </p>
+                <h4 class="font-semibold text-white mb-2 text-sm">
+                  Key Features:
+                </h4>
+                <ul class="text-sm text-on-surface-variant mb-4 space-y-1">
+                  <li>
+                    • <b>Lead Tracking:</b> Captured and managed leads with
+                    status updates, conversion funnels and follow-up reminders.
+                  </li>
+                  <li>
+                    • <b>Client Database:</b> Centralized customer profiles with
+                    history, preferences and communication logs.
+                  </li>
+                  <li>
+                    • <b>Automated Communication:</b> Integrated email/SMS
+                    workflows for timely updates and engagement.
+                  </li>
+                  <li>
+                    • <b>Role-Based Access:</b> Implemented RBAC to secure
+                    sensitive client data and manage team permissions.
+                  </li>
+                </ul>
+                <h4 class="font-semibold text-white mb-2 text-sm">Impact:</h4>
+                <p class="text-sm text-on-surface-variant">
+                  Enhanced customer engagement by reducing manual tracking,
+                  improved lead conversion rates and provided management with
+                  actionable insights through reporting dashboards.
+                </p>
+                <p class="text-primary text-sm mt-4">Click to collapse</p>
+              </div>
+            </div>
+
+            <!-- <div
               class="glass-panel p-6 rounded-xl hover:glow-hover transition-all duration-300 cursor-pointer project-card"
               onclick="toggleProject(this)"
             >
@@ -805,96 +1181,13 @@
                 </ul>
                 <h4 class="font-semibold text-white mb-2 text-sm">Impact:</h4>
                 <p class="text-sm text-on-surface-variant">
-                  Eliminated manual work, improved task allocation, and
+                  Eliminated manual work, improved task allocation and
                   centralized client documentation. Enhanced visibility into
                   project progress and employee expertise.
                 </p>
                 <p class="text-primary text-sm mt-4">Click to collapse</p>
               </div>
-            </div>
-
-            <div
-              class="glass-panel p-6 rounded-xl hover:glow-hover transition-all duration-300 cursor-pointer project-card"
-              onclick="toggleProject(this)"
-            >
-              <div class="project-front">
-                <div class="flex items-center gap-3 mb-4">
-                  <span class="text-2xl">🖥</span>
-                  <h3 class="font-headline text-xl font-bold text-white">
-                    Employee Monitoring System
-                  </h3>
-                </div>
-                <p class="text-on-surface-variant text-sm mb-4">
-                  Custom monitoring software designed to track employee
-                  activity, productivity, and system usage in real time.
-                </p>
-                <div class="flex flex-wrap gap-2 mb-4">
-                  <span
-                    class="px-2 py-1 bg-primary/20 text-primary text-xs rounded-full"
-                    >Python</span
-                  >
-                  <span
-                    class="px-2 py-1 bg-primary/20 text-primary text-xs rounded-full"
-                    >PHP CI API</span
-                  >
-                  <span
-                    class="px-2 py-1 bg-primary/20 text-primary text-xs rounded-full"
-                    >MySQL</span
-                  >
-                  <span
-                    class="px-2 py-1 bg-primary/20 text-primary text-xs rounded-full"
-                    >AWS EC2</span
-                  >
-                  <span
-                    class="px-2 py-1 bg-primary/20 text-primary text-xs rounded-full"
-                    >InnoSetup</span
-                  >
-                  <span
-                    class="px-2 py-1 bg-primary/20 text-primary text-xs rounded-full"
-                    >Firebase</span
-                  >
-                </div>
-                <p class="text-primary text-sm">Click to see full details</p>
-              </div>
-              <div class="project-back hidden">
-                <div class="flex items-center gap-3 mb-4">
-                  <span class="text-2xl">🖥</span>
-                  <h3 class="font-headline text-xl font-bold text-white">
-                    Employee Monitoring System (Python + PHP CI API)
-                  </h3>
-                </div>
-                <p class="text-on-surface-variant text-sm mb-4">
-                  Custom monitoring software designed to track employee
-                  activity, productivity, and system usage in real time.
-                </p>
-                <h4 class="font-semibold text-white mb-2 text-sm">
-                  Key Features:
-                </h4>
-                <ul class="text-sm text-on-surface-variant mb-4 space-y-1">
-                  <li>• Authenticated login via PHP CI API.</li>
-                  <li>
-                    • Logs user activity every 15 seconds (apps, browser tabs).
-                  </li>
-                  <li>
-                    • User‑defined unproductive apps trigger auto‑screenshots
-                    for accountability.
-                  </li>
-                  <li>
-                    • Tracks productive vs. unproductive time, idle/break
-                    periods.
-                  </li>
-                  <li>• USB read/write/rename activity logging.</li>
-                  <li>• Admin dashboard for detailed productivity reports.</li>
-                </ul>
-                <h4 class="font-semibold text-white mb-2 text-sm">Impact:</h4>
-                <p class="text-sm text-on-surface-variant">
-                  Provided transparency into employee performance. Enabled
-                  proactive management of unproductive activities. Strengthened
-                  data security and accountability.
-                </p>
-                <p class="text-primary text-sm mt-4">Click to collapse</p>
-              </div>
-            </div>
+            </div> -->
 
             <div
               class="glass-panel p-6 rounded-xl hover:glow-hover transition-all duration-300 cursor-pointer project-card"
@@ -955,7 +1248,7 @@
                   </li>
                   <li>
                     • <b>Exam Lifecycle Management:</b> Developed backend
-                    modules for automated registration, result processing, and
+                    modules for automated registration, result processing and
                     digital certification distribution.
                   </li>
                   <li>
@@ -985,33 +1278,202 @@
             >
               <div class="project-front">
                 <div class="flex items-center gap-3 mb-4">
-                  <span class="text-2xl">🧺</span>
+                  <span class="text-2xl">🧪</span>
                   <h3 class="font-headline text-xl font-bold text-white">
-                    Laundry Management System
+                    Laboratory Management ERP
                   </h3>
                 </div>
                 <p class="text-on-surface-variant text-sm mb-4">
-                  A full-stack Business Management System (BMS) featuring
-                  customer workflows, automated billing, and real-time order
-                  tracking for laundry operations.
+                  An ERP solution built to digitize lab operations, including
+                  inquiries, quotations, sample tracking, inventory and
+                  reporting.
                 </p>
                 <div class="flex flex-wrap gap-2 mb-4">
                   <span
                     class="px-2 py-1 bg-primary/20 text-primary text-xs rounded-full"
-                    >PHP CodeIgniter</span
                   >
+                    PHP Laravel
+                  </span>
                   <span
                     class="px-2 py-1 bg-primary/20 text-primary text-xs rounded-full"
-                    >MySQL</span
                   >
+                    MySQL
+                  </span>
                   <span
                     class="px-2 py-1 bg-primary/20 text-primary text-xs rounded-full"
-                    >DomPDF</span
                   >
+                    RBAC
+                  </span>
                   <span
                     class="px-2 py-1 bg-primary/20 text-primary text-xs rounded-full"
-                    >PhpSpreadsheet</span
                   >
+                    OTP Authentication
+                  </span>
+                </div>
+                <p class="text-primary text-sm">Click to see full details</p>
+              </div>
+              <div class="project-back hidden">
+                <div class="flex items-center gap-3 mb-4">
+                  <span class="text-2xl">🧪</span>
+                  <h3 class="font-headline text-xl font-bold text-white">
+                    Lab Workflow & Inventory System
+                  </h3>
+                </div>
+                <p class="text-on-surface-variant text-sm mb-4">
+                  Developed a comprehensive ERP for labs to automate workflows,
+                  manage inventory and ensure secure role-based access.
+                </p>
+                <h4 class="font-semibold text-white mb-2 text-sm">
+                  Key Features:
+                </h4>
+                <ul class="text-sm text-on-surface-variant mb-4 space-y-1">
+                  <li>
+                    • <b>Inquiry & Quotation:</b> Automated client requests and
+                    quotation generation.
+                  </li>
+                  <li>
+                    • <b>Sample Tracking:</b> Built modules for barcode-based
+                    sample management.
+                  </li>
+                  <li>
+                    • <b>RBAC:</b> Implemented role-based dashboards and secure
+                    access control.
+                  </li>
+                  <li>
+                    • <b>Reporting:</b> Generated operational and
+                    compliance-ready reports.
+                  </li>
+                </ul>
+                <h4 class="font-semibold text-white mb-2 text-sm">Impact:</h4>
+                <p class="text-sm text-on-surface-variant">
+                  Reduced manual processing time by 40%, improved accuracy in
+                  sample tracking and enhanced compliance with secure ERP
+                  workflows.
+                </p>
+                <p class="text-primary text-sm mt-4">Click to collapse</p>
+              </div>
+            </div>
+
+            <div
+              class="glass-panel p-6 rounded-xl hover:glow-hover transition-all duration-300 cursor-pointer project-card"
+              onclick="toggleProject(this)"
+            >
+              <div class="project-front">
+                <div class="flex items-center gap-3 mb-4">
+                  <span class="text-2xl">🌱</span>
+                  <h3 class="font-headline text-xl font-bold text-white">
+                    Customer & Vendor Growth Platform
+                  </h3>
+                </div>
+                <p class="text-on-surface-variant text-sm mb-4">
+                  A dual-app ecosystem enabling customers to shop and vendors to
+                  offer services, subscriptions and discount coupons — powered
+                  by secure Node.js APIs.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span
+                    class="px-2 py-1 bg-primary/20 text-primary text-xs rounded-full"
+                  >
+                    Node.js (Express)
+                  </span>
+                  <span
+                    class="px-2 py-1 bg-primary/20 text-primary text-xs rounded-full"
+                  >
+                    RESTful APIs
+                  </span>
+                  <span
+                    class="px-2 py-1 bg-primary/20 text-primary text-xs rounded-full"
+                  >
+                    MySQL
+                  </span>
+                  <span
+                    class="px-2 py-1 bg-primary/20 text-primary text-xs rounded-full"
+                  >
+                    Mobile App Integration
+                  </span>
+                </div>
+                <p class="text-primary text-sm">Click to see full details</p>
+              </div>
+              <div class="project-back hidden">
+                <div class="flex items-center gap-3 mb-4">
+                  <span class="text-2xl">🌱</span>
+                  <h3 class="font-headline text-xl font-bold text-white">
+                    Subscription & Shopping Workflow System
+                  </h3>
+                </div>
+                <p class="text-on-surface-variant text-sm mb-4">
+                  Built a scalable platform from scratch where vendors register,
+                  create services and publish discount coupons, while customers
+                  subscribe and shop seamlessly through integrated APIs.
+                </p>
+                <h4 class="font-semibold text-white mb-2 text-sm">
+                  Key Features:
+                </h4>
+                <ul class="text-sm text-on-surface-variant mb-4 space-y-1">
+                  <li>
+                    • <b>Vendor App:</b> Service creation, subscription
+                    management and coupon publishing.
+                  </li>
+                  <li>
+                    • <b>Customer App:</b> Shopping workflows with
+                    subscription-based access and discounts.
+                  </li>
+                  <li>
+                    • <b>API-Driven Integration:</b> Node.js REST APIs powering
+                    authentication, subscriptions and transactions.
+                  </li>
+                  <li>
+                    • <b>Scalability:</b> Modular backend designed for future
+                    expansion into new services.
+                  </li>
+                </ul>
+                <h4 class="font-semibold text-white mb-2 text-sm">Impact:</h4>
+                <p class="text-sm text-on-surface-variant">
+                  Enabled a unified ecosystem for service providers and
+                  customers, streamlined subscription workflows and boosted
+                  engagement through coupon-driven shopping experiences.
+                </p>
+                <p class="text-primary text-sm mt-4">Click to collapse</p>
+              </div>
+            </div>
+
+            <div
+              class="glass-panel p-6 rounded-xl hover:glow-hover transition-all duration-300 cursor-pointer project-card"
+              onclick="toggleProject(this)"
+            >
+              <div class="project-front">
+                <div class="flex items-center gap-3 mb-4">
+                  <span class="text-2xl">🧺</span>
+                  <h3 class="font-headline text-xl font-bold text-white">
+                    Laundry & Dry-Cleaning ERP
+                  </h3>
+                </div>
+                <p class="text-on-surface-variant text-sm mb-4">
+                  A centralized ERP platform for managing laundry service
+                  operations, including customer orders, branch workflows,
+                  payments and reporting.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span
+                    class="px-2 py-1 bg-primary/20 text-primary text-xs rounded-full"
+                  >
+                    PHP CodeIgniter
+                  </span>
+                  <span
+                    class="px-2 py-1 bg-primary/20 text-primary text-xs rounded-full"
+                  >
+                    MySQL
+                  </span>
+                  <span
+                    class="px-2 py-1 bg-primary/20 text-primary text-xs rounded-full"
+                  >
+                    ERP Modules
+                  </span>
+                  <span
+                    class="px-2 py-1 bg-primary/20 text-primary text-xs rounded-full"
+                  >
+                    RBAC
+                  </span>
                 </div>
                 <p class="text-primary text-sm">Click to see full details</p>
               </div>
@@ -1019,46 +1481,40 @@
                 <div class="flex items-center gap-3 mb-4">
                   <span class="text-2xl">🧺</span>
                   <h3 class="font-headline text-xl font-bold text-white">
-                    Operations & Billing Automation Suite
+                    Service Workflow & Customer Management System
                   </h3>
                 </div>
                 <p class="text-on-surface-variant text-sm mb-4">
-                  Developed a dual-purpose platform featuring a public-facing
-                  website and an internal administrative ERP to manage the
-                  end-to-end laundry service lifecycle.
+                  Developed a multi-branch ERP solutions to digitize laundry
+                  service operations, streamline customer engagement and ensure
+                  accurate financial tracking.
                 </p>
                 <h4 class="font-semibold text-white mb-2 text-sm">
                   Key Features:
                 </h4>
                 <ul class="text-sm text-on-surface-variant mb-4 space-y-1">
                   <li>
-                    • <b>Order Architecture:</b> Dynamic line-item creation for
-                    Steam/Dry/Wash with per-item pricing and weight support.
+                    • <b>Order Management:</b> Create, track and update
+                    laundry/dry-cleaning orders with branch-level visibility.
                   </li>
                   <li>
-                    • <b>Fintech Integration:</b> Multi-mode payment tracking
-                    (Cash/Online/Wallet) with UPI integration via environment
-                    variables.
+                    • <b>Customer CRM:</b> Centralized customer database with
+                    history, preferences and notifications.
                   </li>
                   <li>
-                    • <b>Reporting Engine:</b> Built analytics dashboards with
-                    PDF (dompdf) and Excel (PhpSpreadsheet) exports for sales
-                    and reports.
+                    • <b>Payments & Expenses:</b> Integrated billing, payment
+                    tracking and expense management modules.
                   </li>
                   <li>
-                    • <b>Print Logistics:</b> Automated generation of
-                    thermal-printable garment stickers and receipts.
-                  </li>
-                  <li>
-                    • <b>Security:</b> Implemented OTP-based password recovery
-                    and secure session management localized to Asia/Kolkata.
+                    • <b>Reports & Analytics:</b> Generated operational and
+                    financial reports for business insights and compliance.
                   </li>
                 </ul>
                 <h4 class="font-semibold text-white mb-2 text-sm">Impact:</h4>
                 <p class="text-sm text-on-surface-variant">
-                  Streamlined daily operations for staff while providing a
-                  professional digital presence for customers. Enabled precise
-                  revenue tracking and inventory management.
+                  Improved operational efficiency across multiple branches,
+                  reduced manual errors in order tracking and enhanced customer
+                  satisfaction through transparent workflows.
                 </p>
                 <p class="text-primary text-sm mt-4">Click to collapse</p>
               </div>
@@ -1219,11 +1675,16 @@
                 class="space-y-6 text-on-surface-variant text-lg leading-relaxed"
               >
                 <p>
-                  Senior Full Stack Developer & Team Leader with 4+ years of
-                  experience delivering custom ERP, CRM, BFSI and E‑commerce
+                  Senior Full Stack Developer & Team Leader with
+                  <span
+                    id="about-experience-years"
+                    class="text-primary font-bold"
+                    >4.5</span
+                  >
+                  years of experience architecting ERP, CRM, BFSI and DMS
                   solutions. Skilled in PHP (Laravel, CodeIgniter), Node.js and
-                  Python with hands‑on AWS deployments and secure payment
-                  integrations.
+                  Python, with hands‑on AWS deployments, CI/CD automation and
+                  secure payment integrations.
                 </p>
                 <p>
                   Experienced in Agile leadership and performance optimization,
@@ -1234,8 +1695,9 @@
               <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-8">
                 <div>
                   <span
+                    id="stats-experience-years"
                     class="block text-4xl font-headline font-bold text-tertiary"
-                    >4+</span
+                    >4</span
                   >
                   <span
                     class="font-label text-xs uppercase tracking-widest text-on-surface-variant"
@@ -1508,7 +1970,66 @@
         front.classList.toggle("hidden");
         back.classList.toggle("hidden");
       }
-      window.onload = typeWriter;
+      // Calculate dynamic years of experience
+      function updateExperienceYears() {
+        const startDate = new Date(2021, 10, 1); // November 2021 (months are 0-indexed)
+        const today = new Date();
+        const diffTime = today - startDate;
+        const diffDays = diffTime / (1000 * 60 * 60 * 24);
+        const totalYears = diffDays / 365.25;
+        const years = Math.floor(totalYears);
+        const months = Math.floor((totalYears - years) * 12);
+        const decimalYears = totalYears.toFixed(1);
+
+        // Format: "4.6" for stats (one decimal place)
+        const experienceHeaderFormat = `${decimalYears}`;
+        // Format: "4 (6M)" for detailed format
+        const experienceDetailedFormat =
+          months > 0 ? `${years} (${months}M)` : `${years}`;
+
+        // Update experience header in Experience section
+        const experienceElement = document.getElementById("experience-years");
+        if (experienceElement) {
+          experienceElement.textContent = experienceHeaderFormat;
+        }
+
+        // Update experience in Hero section
+        const heroExperienceElement = document.getElementById(
+          "hero-experience-years",
+        );
+        if (heroExperienceElement) {
+          heroExperienceElement.textContent = experienceHeaderFormat;
+        }
+
+        // Update experience in Hero badge
+        const heroBadgeExperienceElement = document.getElementById(
+          "hero-badge-experience",
+        );
+        if (heroBadgeExperienceElement) {
+          heroBadgeExperienceElement.textContent = experienceHeaderFormat;
+        }
+
+        // Update experience in About section paragraph
+        const aboutExperienceElement = document.getElementById(
+          "about-experience-years",
+        );
+        if (aboutExperienceElement) {
+          aboutExperienceElement.textContent = experienceHeaderFormat;
+        }
+
+        // Update experience in About stats section
+        const statsExperienceElement = document.getElementById(
+          "stats-experience-years",
+        );
+        if (statsExperienceElement) {
+          statsExperienceElement.textContent = experienceHeaderFormat;
+        }
+      }
+
+      window.onload = function () {
+        typeWriter();
+        updateExperienceYears();
+      };
     </script>
   </body>
 </html>
