@@ -780,6 +780,124 @@
         </div>
 
         <div class="grid md:grid-cols-2 gap-8">
+          <!-- Movie Room -->
+
+          <div
+            class="glass-panel p-6 rounded-xl hover:glow-hover transition-all duration-300 cursor-pointer project-card"
+            onclick="toggleProject(this)">
+
+            <!-- ================= FRONT ================= -->
+
+            <div class="project-front">
+              <div class="flex items-center gap-3 mb-4">
+                <span class="text-3xl">🎬</span>
+                <h3 class="font-headline text-xl font-bold text-white">
+                  Real-Time Movie Room Platform
+                </h3>
+              </div>
+
+              <p class="text-on-surface-variant text-sm mb-5">
+                Real-time collaborative movie room platform built with Laravel that
+                allows users to create shared viewing rooms, synchronize video playback,
+                chat in real time and manage participant controls without requiring
+                login for room participants.
+              </p>
+
+              <div class="flex flex-wrap gap-2 mb-5">
+                <span class="px-2 py-1 bg-primary/20 text-primary text-xs rounded-full">
+                  PHP
+                </span>
+                <span class="px-2 py-1 bg-primary/20 text-primary text-xs rounded-full">
+                  Laravel
+                </span>
+                <span class="px-2 py-1 bg-primary/20 text-primary text-xs rounded-full">
+                  Laravel Reverb
+                </span>
+                <span class="px-2 py-1 bg-primary/20 text-primary text-xs rounded-full">
+                  Laravel Echo
+                </span>
+                <span class="px-2 py-1 bg-primary/20 text-primary text-xs rounded-full">
+                  MySQL
+                </span>
+                <span class="px-2 py-1 bg-primary/20 text-primary text-xs rounded-full">
+                  WebSockets
+                </span>
+                <span class="px-2 py-1 bg-primary/20 text-primary text-xs rounded-full">
+                  REST APIs
+                </span>
+                <span class="px-2 py-1 bg-primary/20 text-primary text-xs rounded-full">
+                  Tailwind CSS
+                </span>
+              </div>
+
+              <div class="flex justify-between items-center">
+                <span class="text-xs text-on-surface-variant">
+                  Real-Time • Collaboration • WebSockets
+                </span>
+                <span class="text-primary text-sm font-semibold">
+                  View Architecture →
+                </span>
+              </div>
+            </div>
+
+            <!-- ================= BACK ================= -->
+
+            <div class="project-back hidden">
+              <div class="flex items-center gap-3 mb-4">
+                <span class="text-3xl">🎬</span>
+                <h3 class="font-headline text-xl font-bold text-white">
+                  Movie Room – Real-Time Collaboration
+                </h3>
+              </div>
+
+              <p class="text-on-surface-variant text-sm mb-4">
+                Developed a real-time collaborative movie room application where a host
+                can create a room and share a unique room link with participants.
+                Participants can join using a display name while playback controls,
+                chat and room state are synchronized across connected browsers.
+              </p>
+
+              <h4 class="font-semibold text-white mb-2 text-sm">
+                Core Modules
+              </h4>
+
+              <ul class="text-sm text-on-surface-variant mb-4 space-y-1">
+                <li>• Room creation with unique UUID-based share links</li>
+                <li>• Guest participant joining without authentication</li>
+                <li>• Real-time synchronized video playback</li>
+                <li>• Host-only play, pause, stop and end-session controls</li>
+                <li>• Participant mute and unmute controls</li>
+                <li>• Real-time room chat with timestamps</li>
+                <li>• Host-controlled chat enable and disable functionality</li>
+                <li>• Chat message deletion and rate limiting</li>
+                <li>• Ended-session handling and participant status tracking</li>
+              </ul>
+
+              <h4 class="font-semibold text-white mb-2 text-sm">
+                Technical Highlights
+              </h4>
+
+              <ul class="text-sm text-on-surface-variant mb-4 space-y-1">
+                <li>• Laravel MVC architecture</li>
+                <li>• Laravel Reverb for WebSocket communication</li>
+                <li>• Laravel Echo for real-time browser events</li>
+                <li>• Broadcast events for playback and room synchronization</li>
+                <li>• Laravel Policies and Gates for host authorization</li>
+                <li>• Session-based participant identification</li>
+                <li>• MySQL relational database design using Eloquent ORM</li>
+                <li>• API throttling for chat abuse prevention</li>
+                <li>• XSS protection through safe client-side message rendering</li>
+                <li>• Feature and authorization testing with PHPUnit</li>
+              </ul>
+
+              <div class="border-t border-outline-variant pt-3">
+                <p class="text-primary text-sm font-semibold">
+                  Laravel • Reverb • WebSockets • Real-Time Events • Authorization
+                </p>
+              </div>
+            </div>
+          </div>
+
           <!-- Health care project -->
           <div
             class="glass-panel p-6 rounded-xl hover:glow-hover transition-all duration-300 cursor-pointer project-card"
@@ -1499,11 +1617,10 @@
           </div>
 
           <!-- CRM Platform -->
-          <div
+          <!-- <div
             class="glass-panel p-6 rounded-xl hover:glow-hover transition-all duration-300 cursor-pointer project-card"
             onclick="toggleProject(this)">
 
-            <!-- ================= FRONT ================= -->
             <div class="project-front">
 
               <div class="flex items-center gap-3 mb-4">
@@ -1564,7 +1681,6 @@
 
             </div>
 
-            <!-- ================= BACK ================= -->
             <div class="project-back hidden">
 
               <div class="flex items-center gap-3 mb-4">
@@ -1634,7 +1750,7 @@
 
             </div>
 
-          </div>
+          </div> -->
 
           <!-- <div
               class="glass-panel p-6 rounded-xl hover:glow-hover transition-all duration-300 cursor-pointer project-card"
